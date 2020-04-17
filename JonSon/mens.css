@@ -4,12 +4,13 @@
 	overflow: hidden;
 	background-color: black;
 	position: fixed;/* Set the navbar to fixed position */
+	z-index: 1;
 	top: 0; /* Position the navbar at the top of the page */
 	width: 100%; /* Full width */
 }
   
   /* Links inside the navbar */
-.navbar a {
+.navbar  a {
 	font-size: 1.4em;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	float: left;
@@ -18,36 +19,86 @@
 	padding: auto;
 	text-decoration: none;
 	margin: auto;
+	z-index: 1;
 }
   
   /* Change background on mouse-over */
-.navbar a:hover {	
+.navbar  a:hover {	
 
 	background-color: white;
 	color: black;
 	text-decoration: none;
+	z-index: 1;
 
+}
+
+.header {
+	padding: 10px 16px;
+	background:black;
+	color: #f1f1f1;
+	z-index: 1;
+  }
+  
+  
+.stickyCSS {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+  
+.stickyCSS + .contentCSS {
+	padding-top: 102px;
+	z-index: 1;
 }
   
   /* Main content */
+
+.contentCSS {
+	padding: 16px;
+	z-index: 1;
+	
+}
+  
 .main {
 	margin-top: 30px; /* Add a top margin to avoid content overlay */
+	z-index: -1;
 }
 
+.topnav .search-container {
+	float: right;
+  }
+  
+.topnav input[type=text] {
+	padding: auto;
+	margin: auto;
+	font-size: 1.3em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	border: block;
+}
+  
+.topnav .search-container button {
+	float: right;
+	padding: 10px 10px;
+	margin-top: 8px;
+	margin-right: 30px;
+	background: whitesmoke;
+	font-size: 1.2em;
+	border: none;
+	cursor: pointer;
+}
+
+
 .footer {
+
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: black;
+	background-color:black;
 	color: white;
 	text-align: center;
-	font-size: 1.0em;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	margin-top: 30px;
-	padding-top: auto;
  }
-
 
 img{
 
@@ -81,36 +132,5 @@ img{
 	border: 20px solid black;
 }
 
-#logo{
-	padding-left: 0px;
-	margin-left: 0px;
-	width: 30px;
-	height: 20px;
-	width: 20px;
 
-}
-
-.topnav .search-container {
-	float: right;
-  }
-  
-.topnav input[type=text] {
-	padding: auto;
-	margin: auto;
-	font-size: 1.3em;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	border: block;
-}
-  
-.topnav .search-container button {
-	float: right;
-	padding: 10px 10px;
-	margin-top: 8px;
-	margin-right: 30px;
-	background: whitesmoke;
-	font-size: 1.2em;
-	border: none;
-	cursor: pointer;
-}
-  
 
