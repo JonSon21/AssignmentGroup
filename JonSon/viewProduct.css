@@ -33,10 +33,11 @@
 }
 
 .header {
-	padding: 10px 16px;
+	padding: auto;
 	background:black;
 	color: #f1f1f1;
 	z-index: 1;
+	
   }
   
   
