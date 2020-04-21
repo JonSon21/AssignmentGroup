@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Membership Form</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="./registerform.css" rel="stylesheet">
+</head>
+
+<header>
+    
+<header>
+
+    <div class="stickyCSS">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./mens.html">Men</a>
+            <ul>
+                <li><a href="#">Life Style</a></li>
+                <li><a href="#">Gym</a></li>
+                <li><a href="#">Basketball</a></li>
+                <li><a href="#">Running</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Women</a>
+            <ul>
+                <li><a href="#">Life</a></li>
+                <li><a href="#">Gym</a></li>
+                <li><a href="#">Train</a></li>
+                <li><a href="#">Run</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Coming Soon</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Help</a></li>
+    
+        <div class="topnav">
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Looking for Shoes?" name="search">
+        
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+    </ul>      
+    </div>
+</header>
+<br>
+<br>
+<br>
+<br>
+  <body>
+    <div class="testbox">
+      <form action="./mens.html">
+        <div class="banner">
+          <h1>Membership Form</h1>
+        </div>
+        <p class="top-info">Want to become a member of our Shop? Then start by filling our form to complete registration. We will contact you shortly to notify you about your membership card.</p>
+        <div class="item">
+          <p>Name<span class="required">*</span></p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="First" required/>
+            <input type="text" name="name" placeholder="Last" required/>
+          </div>
+        </div>
+        <div class="question">
+          <p>Gender<span class="required">*</span></p>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="gender" required/> <span>Male</span></label>
+            <label><input type="radio" value="none" name="gender" required/> <span>Female</span></label>
+          </div>
+        </div>
+        
+        <div class="item">
+          <p>Home Address<span class="required">*</span></p>
+          <input type="text" name="name" placeholder="Street address" required/>
+          <div class="city-item">
+            <select>
+                <option value="">State</option>
+                <option value="1">Penang</option>
+                <option value="2">Kuala Lumpur</option>
+                <option value="3">Perak</option>
+                <option value="4">Sarawak</option>
+                <option value="5">Sabah</option>
+                <option value="6">Johor</option>
+                <option value="7">Melaka</option>
+                <option value="8">Selangor</option>
+                <option value="9">Kedah</option>
+                <option value="10">Terengganu</option>
+                <option value="11">Negeri Sembilan</option>
+              </select>
+              <select>
+                <option value="">Region</option>
+                <option value="1">Seberang Perai</option>
+                <option value="2">Kuala Lumpur</option>
+                <option value="3">Ipoh</option>
+                <option value="4">Kajang</option>
+                <option value="5">George Town</option>
+                <option value="6">Selayang</option>
+                <option value="7">Shah Alam</option>
+                <option value="8">Sandakan</option>
+                <option value="9">Miri</option>
+                <option value="10">Bintulu</option>
+                <option value="11">Kuala Selangor</option>
+                <option value="12">Sibu</option>
+              </select>
+            <input type="number" name="name" placeholder="Postal / Zip code" required/>
+            <select>
+              <option value="">Country</option>
+              <option value="1">Malaysia</option>
+              <option value="2">Indonesia</option>
+              <option value="3">Thailand</option>
+              <option value="4">Myanmmar</option>
+              <option value="5">China</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        <div class="item">
+          <p>Phone</p>
+          <input type="number" name="someid"/>
+        </div>
+        <div class="question">
+          <p>Membership Type<span class="required">*</span></p>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="membership" required/> <span>Regular</span></label>
+            <label><input type="radio" value="none" name="membership" required/> <span>VIP</span></label>
+            <label><input type="radio" value="none" name="membership" required/> <span>GOLD VIP</span></label>
+          </div>
+        </div>
+        <div class="btn-block">
+            <button onclick="myFunction()">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+        function myFunction() {
+          alert("Submitted !");
+        }
+        </script>     
+
+  </body>
+</html>

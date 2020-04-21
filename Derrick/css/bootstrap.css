@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+/* Breadcrumbs */
+
+.breadcrumb-text {
+	border-bottom: 1px solid #ebebeb;
+	padding: 15px 0;
+}
+
+.breadcrumb-text a:nth-child(1):after {
+	color: #252525;
+}
+
+.breadcrumb-text a {
+	display: inline-block;
+	font-size: 16px;
+	color: black;
+	margin-right: 28px;
+	position: relative;
+	text-decoration: none;
+}
+
+.breadcrumb-text#breadcrumbs-next {
+	position: relative;
+	font-family: "FontAwesome";
+	font-size: 16px;
+	color: #b2b2b2;
+}
+
+.breadcrumb-text span {
+	display: inline-block;
+	color: #b2b2b2;
+}
+
+/* Modal */
+/* Style the Image Used to Trigger the Modal */
+#product {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  #product:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+  }
+
+  @keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+	.modal-content {
+	  width: 100%;
+	}
+}
+
+#button-prev, #button-next
+{
+	background-color:rgb(37, 34, 35);
+}
+
+
+.product-shop {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.product-details .product-title {
+	position: relative;
+	margin-bottom: 6px;
+}
+
+.product-details .product-title span {
+	display: block;
+	font-size: 12px;
+	color: #b2b2b2;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	line-height: 23px;
+}
+
+.product-details .product-title h3 {
+	font-family: 'Baloo Paaji 2';font-size:30px;
+	color: #252525;
+	font-weight: 700;
+}
+
+.product-details .product-title .heart-icon {
+	color: #252525;
+	font-size: 18px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.product-details .product-rating {
+	margin-bottom: 10px;
+}
+
+.product-details .product-rating i {
+	font-size: 12px;
+	display: inline-block;
+	color: #FAC451;
+	margin-right: -3px;
+}
+
+.product-details .product-rating span {
+	font-size: 12px;
+	color: #999591;
+}
+
+.product-details .product-desc {
+	margin-bottom:60px;
+}
+
+.product-details .product-desc p {
+	font-family: 'Roboto';font-size:15px;
+	color: #636363;
+}
+
+.product-details .product-desc h4 {
+	color: rgb(255, 47, 48);
+	font-weight: 700;
+	font-family: 'Roboto';
+}
+
+.product-details .product-desc h4 span {
+	font-size: 22px;
+	font-weight: 400;
+	color: #b7b7b7;
+	text-decoration: line-through;
+	display: inline-block;
+	margin-left: 13px;
+	font-family: 'Roboto';
+}
+
+.product-details .product-color {
+	margin-bottom:18px;
+}
+
+.product-details .product-color h6 {
+	font-family: 'Baloo Paaji 2';font-size:18px;
+	color: #252525;
+	font-weight: 700;
+	float: left;
+	margin-right: 28px;
+}
+
+.product-details .product-color .product-color-choose .cc-item {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.product-details .product-color .product-color-choose .cc-item input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.product-details .product-color .product-color-choose .cc-item label {
+	height: 20px;
+	width: 20px;
+	background: black;
+	opacity: 0.8;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-bottom: 0;
+}
+
+.product-details .product-color .product-color-choose .cc-item label.cc-yellow {
+	background: yellow;
+	opacity: 0.8;
+	
+}
+
+.product-details .product-color .product-color-choose .cc-item label.cc-red {
+	background: red;
+	opacity: 0.8;
+}
+
+.product-details .product-size {
+	margin-bottom: 30px;
+}
+
+.product-details .product-size .sc-item {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.product-details .product-size .sc-item:last-child {
+	margin-right: 0;
+}
+
+.product-details .product-size .sc-item input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.product-details .product-size .sc-item label {
+	font-family: 'Baloo Paaji 2';
+	font-size: 16px;
+	color: #252525;
+	font-weight: 700;
+	height: 40px;
+	width: 47px;
+	border: 1px solid #ebebeb;
+	text-align: center;
+	line-height: 40px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.product-details .product-size .sc-item label.active {
+	background: #252525;
+	color: #ffffff;
+}
+
+.product-details .input-group {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 33px;
+	width:40%;
+}
+
+.product-details .add-to-cart
+{
+	text-align:center;
+	width:60%;
+}
+
+.product-details .add-to-cart:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.product-details .input-group #myNumber{
+	width: 20px;
+	font-size: 14px;
+	font-weight: 700;
+	border: 2px solid #b7b7b7;
+	border-radius: 4px;
+	padding: 3px;
+	color: #4c4c4c;
+	line-height: 40px;
+	float: left;
+	text-align: center
+}
+
+.input-group-btn{
+	color:#b7b7b7;
+	margin-right:25px;
+	font-size: 24px;
+	float: left;
+	line-height: 38px;
+	cursor: pointer;
+	width: 18px;
+}
+
+.product-details .pd-tags {
+	margin-bottom: 27px;
+}
+
+.product-details .pd-tags li {
+	list-style: none;
+	font-size: 16px;
+	color: #636363;
+	line-height: 30px;
+}
+
+.product-details .pd-tags li span {
+	color: #252525;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.product-details .pd-share {
+	overflow: hidden;
+}
+
+.product-details .pd-share .p-code {
+	font-size: 16px;
+	color: #252525;
+	float: left;
+}
+
+.product-details .pd-share .pd-social {
+	float: right;
+}
+
+.product-details .pd-share .pd-social a {
+	display: inline-block;
+	color: #252525;
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+
+
