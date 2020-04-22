@@ -112,12 +112,13 @@ body{
 .footer{
   background: black;
   color:white;
-  height: 400px;
+  height: 350px;
   position:relative;
 }
 
 .footer .footer-bottom{
   background:black;
+  opacity: .0.7;
   color: grey;
   height: 50px;
   width:100%;
@@ -150,7 +151,7 @@ color: grey;
 }
 
 .footer .footer-content h1, .footer .footer-content h2{
-  color:#05f7ff;
+  color:whitesmoke;
 }
 
 .footer .footer-content .about .contact span{
