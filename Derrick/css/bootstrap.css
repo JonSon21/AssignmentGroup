@@ -487,3 +487,127 @@
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
+
+.filter-widget .filter-btn {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 700;
+	background: black;
+	padding: 7px 20px 5px;
+	border-radius: 2px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.filter-widget .fw-color-choose .cs-item {
+	width: 50%;
+	float: left;
+	margin-bottom: 4px;
+}
+
+.filter-widget .fw-color-choose .cs-item input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.filter-widget .fw-color-choose .cs-item label {
+	cursor: pointer;
+	position: relative;
+	padding-left: 33px;
+	font-size: 16px;
+	color: #636363;
+}
+
+.filter-widget .fw-color-choose .cs-item label.cs-violet:before {
+	background: #8230E3;
+}
+
+.filter-widget .fw-color-choose .cs-item label.cs-blue:before {
+	background: #2773BE;
+}
+
+.filter-widget .fw-color-choose .cs-item label.cs-yellow:before {
+	background: #EEEE21;
+}
+
+.filter-widget .fw-color-choose .cs-item label.cs-red:before {
+	background: #DC3232;
+}
+
+.filter-widget .fw-color-choose .cs-item label.cs-green:before {
+	background: #81D742;
+}
+
+.filter-widget .fw-color-choose .cs-item label:before {
+	position: absolute;
+	left: 0;
+	top: 4px;
+	height: 18px;
+	width: 18px;
+	background: #252525;
+	border-radius: 50%;
+	content: "";
+	font-family: 'Roboto';
+}
+
+.sc-size {
+	border: none;
+	outline: none;
+	padding: 10px 16px;
+	cursor: pointer;
+	font-size: 18px;
+	max-width:25%
+  }
+  
+  /* Style the active class, and buttons on mouse-over */
+  .active, .sc-size:hover {
+	background-color: black;
+	color: white;
+  }
+
+  .filter-widget .fw-tags a {
+	display: inline-block;
+	font-size: 16px;
+	color: #ebebeb;;
+	padding: 5px 15px;
+	border: 1px solid #ebebeb;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border-radius: 2px;
+	background-color: #636363;
+	font-family: 'Roboto';
+	text-decoration: bold;
+	border-radius: 4px;
+  }
+
+  .center-pic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+  }
+
+.related-products th{
+	border-bottom: 39px;
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Baloo Paaji 2';
+}
+
+.related-products caption{
+	caption-side: top;
+	font-size: 40px;
+	font-family: 'Baloo Paaji 2';
+	color: black;
+}
+
+.related-products .related-prod-decs{
+	text-align: center;
+	font-size: 15px;
+	color: gray;
+	font-family: 'Roboto';
+	background-color: black;
+}
+	
+
+
