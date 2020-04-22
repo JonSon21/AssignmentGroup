@@ -12,21 +12,19 @@ body{
 
 .stickyCSS ul li{
   float:left;
-  width:200px;
+  width:160px;
   height:40px;
   background-color: black;
   opacity:.8;
   line-height: 40px;
   text-align:center;
   font-size:20px;
-
 }
 
 .stickyCSS ul li a{
   text-decoration: none;
   color:white;
   display:block;
-
 }
 
 .stickyCSS ul li a:hover{
@@ -78,7 +76,7 @@ body{
 
 .topnav .search-container button {
   float: right;
-  padding: 6px 10px;
+  padding: 6px ;
   margin-top: 8px;
   margin-right: 16px;
   background:#ddd;
@@ -106,6 +104,21 @@ body{
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
+}
+
+.column {
+  column-count: 3;
+  float: left;
+	width: 100%;
+	padding:20px;
+	text-decoration: none;
+	z-index: -1;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Footer*/
@@ -150,7 +163,7 @@ color: grey;
 }
 
 .footer .footer-content h1, .footer .footer-content h2{
-  color:#05f7ff;
+  color:white;
 }
 
 .footer .footer-content .about .contact span{
