@@ -20,7 +20,7 @@
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fontawesome/all.css" type="text/css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css" type="text/css">
     <link rel="stylesheet" href="css/product.css" type="text/css">
   
 
@@ -382,13 +382,9 @@
           <div class="filter-widget">
               <h4 class="fw-title">Tags</h4>
               <div class="fw-tags">
-                  <a href="#">Towel</a>
-                  <a href="#">Shoes</a>
-                  <a href="#">Coat</a>
-                  <a href="#">Dresses</a>
-                  <a href="#">Trousers</a>
-                  <a href="#">Men's hats</a>
-                  <a href="#">Backpack</a>
+                  <a href="#">Men Shoes</a>
+                  <a href="#">Women Shoes</a>
+                  <a href="#">Accessories</a>
               </div>
           </div>
         </div>
@@ -414,10 +410,8 @@ function down(min) {
 </script>
 
 <script>
-// Get the modal
 var modal = document.getElementById("product-big-url");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("product");
 var modalImg = document.getElementById("img01");
 img.onclick = function(){
@@ -426,17 +420,14 @@ modalImg.src = this.src;
  captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
  modal.style.display = "none";
 }
 </script>
 
 <script>
-  // Add active class to the current button (highlight it)
   var header = document.getElementById("fw-sc");
   var btns = header.getElementsByClassName("sc-size");
   for (var i = 0; i < btns.length; i++) {
@@ -452,29 +443,31 @@ span.onclick = function() {
    function enableUSsize() {
     var el = document.getElementById("dropdown-menu-size");
     el.classList.remove("disabled");
-    document.getElementByID("shoe-uk-size").style.display="none";
-    document.getElementByID("shoe-eu-size").style.display="none";
+    document.getElementById("shoe-us-size").style.display="";
+    document.getElementById("shoe-uk-size").style.display="none";
+    document.getElementById("shoe-eu-size").style.display="none";
   }
   function enableUKsize() {
     var el = document.getElementById("dropdown-menu-size");
     el.classList.remove("disabled");
-    document.getElementByID("shoe-us-size").style.display="none";
-    document.getElementByID("shoe-eu-size").style.display="none";
+    document.getElementById("shoe-uk-size").style.display="";
+    document.getElementById("shoe-us-size").style.display="none";
+    document.getElementById("shoe-eu-size").style.display="none";
   }
   function enableEUsize() {
     var el = document.getElementById("dropdown-menu-size");
     el.classList.remove("disabled");
-    document.getElementByID("shoe-us-size").style.display="none";
-    document.getElementByID("shoe-uk-size").style.display="none";
+    document.getElementById("shoe-eu-size").style.display="";
+    document.getElementById("shoe-us-size").style.display="none";
+    document.getElementById("shoe-uk-size").style.display="none";
   }
 </script>
 
 <script>
   var slider = document.getElementById("myRange");
   var output = document.getElementById("demo");
-  output.innerHTML = slider.value; // Display the default slider value
+  output.innerHTML = slider.value; 
 
-// Update the current slider value (each time you drag the slider handle)
   slider.oninput = function() {
   output.innerHTML = this.value;
 }
