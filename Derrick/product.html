@@ -23,8 +23,6 @@
     <link rel="stylesheet" href="css/fontawesome/css/all.css" type="text/css">
     <link rel="stylesheet" href="css/product.css" type="text/css">
   
-
-    <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
 </head>
 
 <body>
@@ -91,7 +89,7 @@
                     <!-- Modal Content (The Image) -->
                     <img class="modal-content" id="img01">
 
-                  </div>
+                  </div> 
                   </br>
                   </br>    
                   </br>
@@ -237,42 +235,48 @@
                       </fieldset>
                   </div>
               </div>
-          </div>  
+          </div>            
+          <br/>
+          <br/>
+          <br/>
+
+          <div class="tabs">
           
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+            <input name="tabbed" id="tabbed1" onclick="tabcheck1()" type="radio" checked>
+            <section>
+              <h1>
+                <label for="tabbed1">Description</label>
+              </h1>
+              <div>
+                <p>The shoe features a Photo Reel, Team Orange and Gym Red color scheme. Featuring a gradient effect throughout the one piece woven-upper from Orange to Blue, the best feature of the shoe is the real life Jumpman logo in place of the silhouettes original shadow look of the Jumpman logo. The other side of the shoe shows a city outline that was seen in the original photo.
+                </p>
+              </div>
+            </section>
+          
+            <input name="tabbed" id="tabbed2" onclick="tabcheck2()" type="radio">
+            <section>
+              <h1>
+                <label for="tabbed2">Specifications</label>
+              </h1>
+              <div>
+                <p>Bye</p>
+              </div>
+            </section>
+          
+            <input name="tabbed" id="tabbed3" onclick="tabcheck3()" type="radio">
+            <section>
+              <h1>
+                <label for="tabbed3">Customer Reviews</label>
+              </h1>
+              <div>
+                <p>See You</p>
+              </div>
+            </section>
 
-          <table class="related-products" style="width:100%">
-            <caption>Related Products</caption>
-            <tr>
-              <th>Air Jordan I</th>
-              <th>Air Jordan II</th> 
-              <th>Air Jordan III</th>
-            </tr>
+          </div>
 
-            <tr>
-              <td><a><img src="1.jpg" class="center-pic"></a></td>
-              <td><a><img src="2.jpg" class="center-pic"></a></td>
-              <td><a><img src="3.jpg" class="center-pic"></a></td>
-            </tr>
-
-            <tr>
-              <td class="related-prod-decs"> </td>
-              <td class="related-prod-decs"> </td>
-              <td class="related-prod-decs"> </td>
-            </tr>
-
-          </table>
         </div>
 
-          
       <div class="col-lg-3">
         <div class="jumbotron">
           <div class="filter-widget">
@@ -437,7 +441,7 @@ span.onclick = function() {
     this.className += " active";
     });
   }
-  </script>
+</script>
 
 <script>
    function enableUSsize() {
@@ -471,6 +475,33 @@ span.onclick = function() {
   slider.oninput = function() {
   output.innerHTML = this.value;
 }
+</script>
+
+<script>
+  function tabcheck1() {
+   var el = document.getElementById("tabbed1");
+   var ell= document.getElementById("tabbed2");
+   var elll= document.getElementById("tabbed3");
+   el.classList.add("checked");
+   ell.classList.remove("checked");
+   elll.classList.remove("checked");
+ }
+ function tabcheck2() {
+   var el = document.getElementById("tabbed1");
+   var ell= document.getElementById("tabbed2");
+   var elll= document.getElementById("tabbed3");
+   el.classList.remove("checked");
+   ell.classList.add("checked");
+   elll.classList.remove("checked");
+ }
+ function tabcheck3() {
+   var el = document.getElementById("tabbed1");
+   var ell= document.getElementById("tabbed2");
+   var elll= document.getElementById("tabbed3");
+   el.classList.remove("checked");
+   ell.classList.remove("checked");
+   elll.classList.add("checked");
+ }
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
