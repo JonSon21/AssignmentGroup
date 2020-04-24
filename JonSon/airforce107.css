@@ -162,7 +162,7 @@ a:hover {
 .previous {
 	color: black;
 	padding: auto;
-	margin-left: 20px;
+	margin-left: 420px;
 	text-decoration: none;
 	background-color: black;
 	color: white;
@@ -172,8 +172,8 @@ a:hover {
 
 	background-color: white;
 	color: black;
-	padding: auto;
-	margin: auto;
+  padding: auto;
+	margin-left: 420px;
 	text-decoration: none;
 	color: black;
 
@@ -311,3 +311,5 @@ transition: all .3s
   margin-right: 25px;
   margin-left: 25px;
 }
+
+
