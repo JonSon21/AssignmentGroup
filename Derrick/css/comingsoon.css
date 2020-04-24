@@ -121,6 +121,10 @@
 	display: block;
 }
 
+.cs-sidebar a{
+	text-decoration: none;
+}
+
 .cs-sidebar .recent-post .recent-blog .rb-item .rb-pic {
 	float: left;
 }

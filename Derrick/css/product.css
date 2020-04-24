@@ -477,6 +477,11 @@ opacity: 0.7;
   cursor: pointer; 
 }
 
+.slidecontainer p{
+	font-family:'Roboto';
+	font-size:13px;
+}
+
 .filter-widget .filter-btn {
 	font-size: 14px;
 	color: #ffffff;
@@ -488,55 +493,23 @@ opacity: 0.7;
 	text-transform: uppercase;
 }
 
-.filter-widget .fw-color-choose .cs-item {
-	width: 50%;
-	float: left;
-	margin-bottom: 4px;
-}
-
-.filter-widget .fw-color-choose .cs-item input {
-	position: absolute;
-	visibility: hidden;
-}
-
-.filter-widget .fw-color-choose .cs-item label {
-	cursor: pointer;
+.filter-widget .fw-color-choose .bc-item {
+	display: block;
 	position: relative;
-	padding-left: 33px;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
 	font-size: 16px;
-	color: #636363;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
-.filter-widget .fw-color-choose .cs-item label.cs-violet:before {
-	background: #8230E3;
-}
-
-.filter-widget .fw-color-choose .cs-item label.cs-blue:before {
-	background: #2773BE;
-}
-
-.filter-widget .fw-color-choose .cs-item label.cs-yellow:before {
-	background: #EEEE21;
-}
-
-.filter-widget .fw-color-choose .cs-item label.cs-red:before {
-	background: #DC3232;
-}
-
-.filter-widget .fw-color-choose .cs-item label.cs-green:before {
-	background: #81D742;
-}
-
-.filter-widget .fw-color-choose .cs-item label:before {
-	position: absolute;
-	left: 0;
-	top: 4px;
-	height: 18px;
-	width: 18px;
-	background: #252525;
-	border-radius: 50%;
-	content: "";
+.filter-widget .fw-color-choose .bc-item label{
 	font-family: 'Roboto';
+	font-size: 16px;
+	cursor: pointer;
 }
 
 .sc-size {
@@ -796,7 +769,7 @@ opacity: 0.7;
 
 .customer-review-option .personal-rating .rating label:before{
 	display: block;
-	position: relative;
+	position: relative; 
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	content:'\f005';
@@ -877,4 +850,16 @@ opacity: 0.7;
 .comment-form button:active {
 	position:relative;
 	top:1px;
-}
+} 
+
+.comment-form input:focus{
+    background-color: rgb(250, 246, 196);
+ }
+
+ .comment-form input:focus:valid{
+    background-color: rgb(220,255,220);
+ }
+
+ .comment-form input:focus:invalid{
+    background-color: rgb(255,232,232);
+ } 

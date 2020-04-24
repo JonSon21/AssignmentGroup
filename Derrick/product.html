@@ -195,7 +195,7 @@
                                 <a class="dropdown-item"  value="UK10.5">10.5</a>
                                 <a class="dropdown-item"  value="UK11.5">11.5</a>
                                </div>
-                               
+                                
                                <div id="shoe-eu-size">
                                 <a class="dropdown-item"  value="EU40">40</a>
                                 <a class="dropdown-item"  value="EU41">41</a>
@@ -366,7 +366,7 @@
                                 <input type="text" placeholder="Name">
                             </div>
                             <div class="col-lg-6">
-                                <input type="email" placeholder="Email">
+                                <input type="text" placeholder="Email (required)" pattern="[a-z0-9._%+-]{1,40}[@]{1}[a-z]{1,10}[.]{1}[a-z]{3}" required>
                             </div>
                             <div class="col-lg-12">
                                 <textarea placeholder="Enter your comments here!"></textarea>
@@ -431,62 +431,79 @@
             <div class="filter-range-wrap">
                 <div class="range-slider">
                     <div class="price-input">
-                        <input type="text" id="minamount" placeholder="$200">
+                        <input type="text" id="minamount" placeholder="$50">
                         <b>-</b>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" id="maxamount" placeholder="$1000">
+                        <input type="text" id="maxamount" placeholder="$1500">
                     </div>
                 </div>
                 <div class="slidecontainer">
-                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  <input type="range" min="50" max="1500" value="50" class="slider" id="myRange">
+                  <p>Search for items that are priced around $50 to $<span id="demo"></span></p>
                 </div>
             </div>
-            <a href="#" class="filter-btn">Filter</a>
           </div>
 
           <div class="filter-widget">
             <h4 class="fw-title">Color</h4>
             <div class="fw-color-choose">
-                <div class="cs-item">
-                    <input type="radio" id="cs-black">
-                    <label class="cs-black" for="cs-black">Black</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-violet">
-                    <label class="cs-violet" for="cs-violet">Violet</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-blue">
-                    <label class="cs-blue" for="cs-blue">Blue</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-yellow">
-                    <label class="cs-yellow" for="cs-yellow">Yellow</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-red">
-                    <label class="cs-red" for="cs-red">Red</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-green">
-                    <label class="cs-green" for="cs-green">Green</label>
-                </div>
+              <div class="bc-item">
+                  <label for="cs-black">
+                      Black
+                      <input type="checkbox" id="cs-black">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+              <div class="bc-item">
+                  <label for="cs-violet">
+                      Violet
+                      <input type="checkbox" id="cs-violet">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+              <div class="bc-item">
+                  <label for="cs-blue">
+                      Blue
+                      <input type="checkbox" id="cs-blue">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+              <div class="bc-item">
+                  <label for="cs-yellow">
+                      Yellow
+                      <input type="checkbox" id="cs-yellow">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+              <div class="bc-item">
+                <label for="cs-red">
+                    Red
+                    <input type="checkbox" id="cs-red">
+                    <span class="checkmark"></span>
+                </label>
             </div>
-         </div>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
+            <div class="bc-item">
+              <label for="cs-white">
+                  White
+                  <input type="checkbox" id="cs-white">
+                  <span class="checkmark"></span>
+              </label>
+          </div>
+          <br/>
+          <a href="#" class="filter-btn">Filter</a>
+          </div>
+          <br/>
+
 
          <div class="filter-widget">
           <h4 class="fw-title">Size</h4>
-          <div class="fw-size-choose" id="fw-sc">
-            <button class="sc-size" id="sc-size" value="s-size">S</button>
-            <button class="sc-size" id="sc-size" value="m-size">M</button>
-            <button class="sc-size" id="sc-size" value="l-size">L</button>
-            <button class="sc-size" id="sc-size" value="xl-size">XL</button>              
+            <div class="fw-size-choose" id="fw-sc">
+              <button class="sc-size" id="sc-size" value="s-size">S</button>
+              <button class="sc-size" id="sc-size" value="m-size">M</button>
+              <button class="sc-size" id="sc-size" value="l-size">L</button>
+              <button class="sc-size" id="sc-size" value="xl-size">XL</button>              
+            </div>
           </div>
-      </div>
 
           <div class="filter-widget">
               <h4 class="fw-title">Tags</h4>
@@ -549,6 +566,19 @@ span.onclick = function() {
 </script>
 
 <script>
+  var header = document.getElementById("fw-cc");
+  var btns = header.getElementsByClassName("cs-size");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+</script>
+
+
+<script>
    function enableUSsize() {
     var el = document.getElementById("dropdown-menu-size");
     el.classList.remove("disabled");
@@ -575,11 +605,13 @@ span.onclick = function() {
 <script>
   var slider = document.getElementById("myRange");
   var output = document.getElementById("demo");
-  output.innerHTML = slider.value; 
 
   slider.oninput = function() {
   output.innerHTML = this.value;
-}
+  }
+
+  output.innerHTML = slider.value; 
+
 </script>
 
 <script>
