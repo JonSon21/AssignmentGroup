@@ -115,6 +115,10 @@ body{
     }
 }
 
+.container .help h2{
+    text-align: center;
+    }
+
 /* Footer*/
 .footer{
     background: black;
