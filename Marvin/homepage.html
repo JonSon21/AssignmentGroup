@@ -49,9 +49,64 @@
 </header>
 
 <body>
-  <div class="word">
-    <h2>Featured</h2>
-  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Alvah-1-1080x675.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="On-Feet-Look-At-The-adidas-Yeezy-Boost-350-V2-Cinder-ft-1280x720.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Air-Jordan-6-OG-Black-Infrared-On-Foot.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
   <div class="title">
     <h3>Men</h3>
   </div>
@@ -69,6 +124,7 @@
             <img src="../JonSon/Shoes/air-jordan-14-retro-shoe-lmLXCB.jpg" width="400" height="450">
           </div>
         </div>
+
     <div class="title">
       <h3>Women</h3>
     </div>
@@ -87,6 +143,26 @@
           </div>
         </div>
       </div>
+
+      <div class="title">
+        <h3>Featured Footwear</h3>
+      </div>
+        <div class="row">
+          <div class="column">
+            <div class="photos">
+              <img src="../Derrick/yeezy 700 alvah.jpg" width="400" height="300" >
+            </div>
+  
+            <div class="photos">
+              <img src="../Derrick/yeezy boost cinder.jpg" width="400" height="300">
+            </div>
+  
+            <div class="photos">
+              <img src="../Derrick/jordan 6 retro.jpg" width="400" height="300">
+            </div>
+
+          </div>
+        </div>
 </body>
 
 <footer>
