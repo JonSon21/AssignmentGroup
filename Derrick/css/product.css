@@ -46,7 +46,7 @@ opacity: 0.7;
 .modal {
 	display: none; 
 	position: fixed; 
-	z-index: 1; 
+	z-index: 3; 
 	padding-top: 100px; 
 	left: 0;
 	top: 0;
@@ -241,6 +241,18 @@ opacity: 0.7;
 	opacity: 0.8;
 }
 
+.product-details .sizeDrop a
+{
+	float: right;
+	font-size: 16px;
+	color: rgb(95, 93, 93);
+}
+
+.product-details .sizeDrop #size-guide{
+	font-size: 12px;
+}
+
+
 .product-details .dropdown
 {
 	margin-bottom: 33px;
@@ -256,8 +268,7 @@ opacity: 0.7;
 
 .product-details .add-to-cart
 {
-	text-align:center;
-	width:60%;
+	text-align:right;
 }
 
 .product-details .add-to-cart:hover{
@@ -371,7 +382,7 @@ opacity: 0.7;
 
 .filter-widget .fw-brand-check .bc-item label{
 	font-family: 'Roboto';
-	font-size: 16px;
+	font-size: 14px;
 	cursor: pointer;
 }
 
@@ -383,7 +394,11 @@ opacity: 0.7;
 	width: 0;
   }
 
-.checkmark {
+  .bc-item .popup{
+	  visibility:hidden;
+  }
+
+  .checkmark {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -391,28 +406,108 @@ opacity: 0.7;
 	width: 22px;
 	background-color: black;
 	border-radius:2px;
-
 }
 
-.bc-item:hover input ~ .checkmark {
-	background-color: rgb(92, 92, 92);
+.checkmark1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	width: 22px;
+	background-color: black;
+	border-radius:2px;
+	opacity:0.3;
+}
+
+.checkmark2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	width: 22px;
+	background-color: violet;
+	border-radius:2px;
+	opacity:0.3;
+}
+
+.checkmark3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	width: 22px;
+	background-color: blue;
+	border-radius:2px;
+	opacity:0.3;
+}
+
+.checkmark4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	width: 22px;
+	background-color: yellow;
+	border-radius:2px;
+	opacity:0.3;
+}
+
+.checkmark5 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	width: 22px;
+	background-color: red;
+	border-radius:2px;
+	opacity:0.3;
+}
+
+.checkmark6 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	width: 22px;
+	background-color: white;
+	border-radius:2px;
+	opacity:0.7;
+}
+
+.bc-item:hover input ~ .checkmark,
+.bc-item:hover input ~ .checkmark1, .bc-item:hover input ~ .checkmark2, .bc-item:hover input ~ .checkmark3,
+.bc-item:hover input ~ .checkmark4, .bc-item:hover input ~ .checkmark5, .bc-item:hover input ~ .checkmark6{
+	opacity: 1;
   }
 
-.bc-item input:checked ~ .checkmark {
-	background-color: rgb(39, 39, 39);
+  .bc-item input:checked ~ .checkmark,
+  .bc-item input:checked ~ .checkmark1, .bc-item input:checked ~ .checkmark2, .bc-item input:checked ~ .checkmark3,
+  .bc-item input:checked ~ .checkmark4, .bc-item input:checked ~ .checkmark5, .bc-item input:checked ~ .checkmark6{
+	opacity: 1;
   }
 
-.checkmark:after {
+  .checkmark:after,
+  .checkmark1:after, .checkmark2:after, .checkmark3:after, .checkmark4:after,
+  .checkmark5:after, .checkmark6.after {
 	content: "";
 	position: absolute;
 	display: none;
   }
 
-.bc-item input:checked ~ .checkmark:after {
+  .bc-item input:checked ~ .checkmark:after{
+	  display:block;
+  }
+
+  .bc-item input:checked ~ .checkmark1:after , .bc-item input:checked ~ .checkmark2:after , .bc-item input:checked ~ .checkmark3:after ,
+  .bc-item input:checked ~ .checkmark4:after , .bc-item input:checked ~ .checkmark5:after , .bc-item input:checked ~ .checkmark6:after{
+	visibility:hidden;
 	display: block;
   }
 
-.bc-item .checkmark:after {
+.bc-item .checkmark:after,
+.bc-item .checkmark1:after,.bc-item .checkmark2:after,.bc-item .checkmark3:after,
+.bc-item .checkmark4:after,.bc-item .checkmark5:after,.bc-item .checkmark6:after
+{
 	left: 9px;
 	top: 5px;
 	width: 5px;
@@ -423,6 +518,7 @@ opacity: 0.7;
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
   }
+
 
 .filter-widget .filter-range-wrap .range-slider .price-input input {
 	font-size: 16px;
@@ -441,11 +537,14 @@ opacity: 0.7;
   width: 100%; 
 }
 
+.slidecontainer b{
+	font-size: 15px;
+}
+
 .slider {
 
   -webkit-appearance: none;  
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   appearance: none;
   width: 100%; 
   height: 10px; 
@@ -479,7 +578,7 @@ opacity: 0.7;
 
 .slidecontainer p{
 	font-family:'Roboto';
-	font-size:13px;
+	font-size:15px;
 }
 
 .filter-widget .filter-btn {
@@ -501,7 +600,7 @@ opacity: 0.7;
 	cursor: pointer;
 	font-size: 16px;
 	-webkit-user-select: none;
-	-moz-user-select: none;
+	-moz-user-select: none; 
 	-ms-user-select: none;
 	user-select: none;
 }
