@@ -20,11 +20,9 @@
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fontawesome/all.css" type="text/css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css" type="text/css">
     <link rel="stylesheet" href="css/product.css" type="text/css">
   
-
-    <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
 </head>
 
 <body>
@@ -80,7 +78,7 @@
           <div class="row">
               <div class="col-lg-6">
                   <!-- Trigger the Modal -->
-                  <img id="product" src="airjordanxx9(1).png" alt="1" style="width:100%;max-width:650px">
+                  <img id="product" src="af1low whitegymred(h).jpg" alt="1" style="width:100%;max-width:650px">
 
                   <!-- The Modal -->
                   <div id="product-big-url" class="modal">
@@ -91,32 +89,21 @@
                     <!-- Modal Content (The Image) -->
                     <img class="modal-content" id="img01">
 
-                  </div>
+                  </div> 
                   </br>
-                  </br>    
-                  </br>
-                  </br> 
-                  </br>       
-                  <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                  </br>          
+                  <div id="product-carousel" class="carousel slide" data-ride="carousel" data-interval="1500">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="airjordanxx9(2).png" class="d-block w-100" alt="2">
+                        <img src="af1low whitegymred(1).jpg" class="d-block w-100" alt="2">
                       </div>
                       <div class="carousel-item">
-                        <img src="airjordanxx9(3).png" class="d-block w-100" alt="3">
+                        <img src="af1low whitegymred(2).jpg" class="d-block w-100" alt="3">
                       </div>
                       <div class="carousel-item">
-                        <img src="airjordanxx9(4).png" class="d-block w-100" alt="4">
+                        <img src="af1low whitegymred(3).jpg" class="d-block w-100" alt="4">
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev" id="button-prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next" id="button-next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
                   </div>
               </div>
               <div class="col-lg-6">
@@ -124,7 +111,7 @@
                       <fieldset>
                         <div class="product-title">
                           <span>Nike</span>
-                          <h3>Air Jordan XX9 Photo Reel</h3>
+                          <h3>Nike Air Force 1 Low</h3>
                           <a href="#" class="heart-icon"><i class="far fa-heart"></i></a>
                         </div>
                         <div class="product-rating">
@@ -136,78 +123,95 @@
                           <span>(5)</span>
                         </div>
                         <div class="product-desc">
-                          <p>To celebrate the 30th Anniversary of the Jordan Brand, this Air Jordan XX9 ‘Photo Reel’ features the photo that inspired the iconic Jumpman logo on the lateral side of its performance-woven upper.</p>
-                          <h4>$495.00 <span>629.99</span></h4>
+                          <p>Men's Shoe<br/>Nike Air Force 1 Low White Gym Red</p>
+                          <h4>$70 <span>$105</span></h4>
                         </div>
                         <div class="product-color">
                           <h6>Color</h6>
                           <div class="product-color-choose">
                               <div class="cc-item">
-                                  <input type="radio" id="cc-black" value="cc-black">
-                                  <label for="cc-black"></label>
+                                  <input type="radio" id="cc-white" value="cc-white">
+                                  <label for="cc-white"></label>
                               </div>
                               <div class="cc-item">
-                                  <input type="radio" id="cc-yellow">
-                                  <label for="cc-yellow" class="cc-yellow" value="cc-yellow"></label>
+                                  <input type="radio" id="cc-olive-green">
+                                  <label for="cc-olive-green" class="cc-olive-green" value="cc-olive-green"></label>
                               </div>
                               <div class="cc-item">
-                                  <input type="radio" id="cc-red">
-                                  <label for="cc-red" class="cc-red" value="cc-red"></label>
+                                  <input type="radio" id="cc-blue-gray">
+                                  <label for="cc-blue-gray" class="cc-blue-gray" value="cc-blue-gray"></label>
                               </div>
+                              <div class="cc-item">
+                                <input type="radio" id="cc-gray">
+                                <label for="cc-gray" class="cc-gray" value="cc-gray"></label>
+                            </div>
+                            <div class="cc-item">
+                              <input type="radio" id="cc-black">
+                              <label for="cc-black" class="cc-black" value="cc-black"></label>
+                          </div>
                           </div>
                         </div>
 
-                        <div class="dropdown">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdown-menu-country" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Country 
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" onclick="enableUSsize()" value="US">US</a>
-                              <a class="dropdown-item" onclick="enableUKsize()"value="UK">UK</a>
-                              <a class="dropdown-item" onclick="enableEUsize()"value="EU">EU</a>
+                        <div class="row">
+                          <div class="col-lg-3 countryDrop">
+                            <div class="dropdown">
+                              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdown-menu-country" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Country 
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" onclick="enableUSsize()" value="US">US</a>
+                                <a class="dropdown-item" onclick="enableUKsize()"value="UK">UK</a>
+                                <a class="dropdown-item" onclick="enableEUsize()"value="EU">EU</a>
+                              </div>
                             </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="btn btn-outline-secondary dropdown-toggle disabled" type="button" id="dropdown-menu-size" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Shoe Size 
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="shoe-size">
-                              <div id="shoe-us-size">
-                                <a class="dropdown-item"  value="US7">7</a>
-                                <a class="dropdown-item"  value="US7.5">7.5</a>
-                                <a class="dropdown-item"  value="US8">8</a>
-                                <a class="dropdown-item"  value="US8.5">8.5</a>
-                                <a class="dropdown-item"  value="US9">9</a>
-                                <a class="dropdown-item"  value="US9.5">9.5</a>
-                                <a class="dropdown-item"  value="US10">10</a>
-                                <a class="dropdown-item"  value="US10.5">10.5</a>
-                                <a class="dropdown-item"  value="US11">11</a>
-                                <a class="dropdown-item"  value="US12">12</a>
-                               </div>
-                               
-                               <div id="shoe-uk-size">
-                                <a class="dropdown-item"  value="UK6.5">6.5</a>
-                                <a class="dropdown-item"  value="UK7">7</a>
-                                <a class="dropdown-item"  value="UK7.5">7.5</a>
-                                <a class="dropdown-item"  value="UK8">8</a>
-                                <a class="dropdown-item"  value="UK8.5">8.5</a>
-                                <a class="dropdown-item"  value="UK9">9</a>
-                                <a class="dropdown-item"  value="UK9.5">9.5</a>
-                                <a class="dropdown-item"  value="UK10">10</a>
-                                <a class="dropdown-item"  value="UK10.5">10.5</a>
-                                <a class="dropdown-item"  value="UK11.5">11.5</a>
-                               </div>
-                               
-                               <div id="shoe-eu-size">
-                                <a class="dropdown-item"  value="EU40">40</a>
-                                <a class="dropdown-item"  value="EU41">41</a>
-                                <a class="dropdown-item"  value="EU42">42</a>
-                                <a class="dropdown-item"  value="EU43">43</a>
-                                <a class="dropdown-item"  value="EU44">44</a>
-                                <a class="dropdown-item"  value="EU45">45</a>
-                                <a class="dropdown-item"  value="EU46">46</a>
-                               </div>   
-                            </div>                 
+                          </div>
+
+                          <div class="col-lg-9 sizeDrop">
+                            <div class="dropdown">
+                              <button class="btn btn-outline-secondary dropdown-toggle disabled" type="button" id="dropdown-menu-size" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Shoe Size 
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="shoe-size">
+                                <div id="shoe-us-size">
+                                  <a class="dropdown-item"  value="US7">7</a>
+                                  <a class="dropdown-item"  value="US7.5">7.5</a>
+                                  <a class="dropdown-item"  value="US8">8</a>
+                                  <a class="dropdown-item"  value="US8.5">8.5</a>
+                                  <a class="dropdown-item"  value="US9">9</a>
+                                  <a class="dropdown-item"  value="US9.5">9.5</a>
+                                  <a class="dropdown-item"  value="US10">10</a>
+                                  <a class="dropdown-item"  value="US10.5">10.5</a>
+                                  <a class="dropdown-item"  value="US11">11</a>
+                                  <a class="dropdown-item"  value="US12">12</a>
+                                 </div>
+                                 
+                                 <div id="shoe-uk-size">
+                                  <a class="dropdown-item"  value="UK6.5">6.5</a>
+                                  <a class="dropdown-item"  value="UK7">7</a>
+                                  <a class="dropdown-item"  value="UK7.5">7.5</a>
+                                  <a class="dropdown-item"  value="UK8">8</a>
+                                  <a class="dropdown-item"  value="UK8.5">8.5</a>
+                                  <a class="dropdown-item"  value="UK9">9</a>
+                                  <a class="dropdown-item"  value="UK9.5">9.5</a>
+                                  <a class="dropdown-item"  value="UK10">10</a>
+                                  <a class="dropdown-item"  value="UK10.5">10.5</a>
+                                  <a class="dropdown-item"  value="UK11.5">11.5</a>
+                                 </div>
+                                  
+                                 <div id="shoe-eu-size">
+                                  <a class="dropdown-item"  value="EU40">40</a>
+                                  <a class="dropdown-item"  value="EU41">41</a>
+                                  <a class="dropdown-item"  value="EU42">42</a>
+                                  <a class="dropdown-item"  value="EU43">43</a>
+                                  <a class="dropdown-item"  value="EU44">44</a>
+                                  <a class="dropdown-item"  value="EU45">45</a>
+                                  <a class="dropdown-item"  value="EU46">46</a>
+                                 </div>   
+                              </div>   
+                              
+                              <a id="size-guide" href='#'>Full Size Guide</a>
+                          </div>
+                          </div>
                         </div>
 
                         <div class="row" id="form-group">
@@ -222,57 +226,235 @@
                           </div>
 
                           <div class= "add-to-cart col-lg-7">
-                            <button type="button" class="btn btn-outline-secondary" value="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button type="button" class="btn btn-outline-secondary" value="submit"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                           </div>
                         </div>
 
                         <div class="pd-share">
-                          <div class="p-code">SKU : 695515-023</div>
+                          <div class="p-code">SKU : AO2423 102</div>
                           <div class="pd-social">
-                              <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                              <a href="https://www.facebook.com/tunkuabdulrahmanuniversitycollege/"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://www.instagram.com/taruc_official/?hl=en"><i class="fab fa-instagram"></i></a>
+                              <a href="https://www.tarc.edu.my/"><i class="far fa-window-maximize"></i></a>
                           </div>
                         </div>
                       </fieldset>
                   </div>
               </div>
-          </div>  
+          </div>            
+          <br/>
+          <br/>
+          <br/>
+
+          <div class="tabs">
           
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+            <input name="tabbed" id="tabbed1" onclick="tabcheck1()" type="radio" checked>
+            <section class="tabbed">
+              <h1>
+                <label for="tabbed1">Description</label>
+              </h1>
+              <div class="tabbed-desc">
+                <h6><b>Features</b></h6>
+                <p>The Nike Air Force 1 Low '07 3 'Gym Red' sneaker revisits the iconic 1982 hardwood silhouette to update it for modern sensibilities. 
+                  The shoe is dressed in White leather, highlighted by Gym Red accents, and is outfitted with a low-cut collar for flexibility through the ankle.
+                   Its midsole is cushioned with an Air-Sole unit and capped by a rubber outsole for lasting comfort.
+                </p>
 
-          <table class="related-products" style="width:100%">
-            <caption>Related Products</caption>
-            <tr>
-              <th>Air Jordan I</th>
-              <th>Air Jordan II</th> 
-              <th>Air Jordan III</th>
-            </tr>
+                <div class="slide-modal">
+                  <h2><b>Gallery</b></h2>
+                  <div class="product-lightbox">
+                    <div class="row">
+                      <div class="column" style="width:25%">
+                        <img src="air force 1 medium olive.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                      </div>
+                      <div class="column" style="width:25%">
+                        <img src="air force 1 low blue legend.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                      </div>
+                      <div class="column" style="width:25%">
+                        <img src="air force 1 low dark grey light bone gum.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                      </div>
+                      <div class="column" style="width:25%">
+                        <img src="air force 1 low neutral grey.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                      </div>
+                    </div>
+              
+                    <div id="myModal" class="modal">
+                      <span class="close cursor" onclick="closeModal()">&times;</span>
+                      <div class="modal-content">
+                    
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="air force 1 medium olive.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="air force 1 low blue legend.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="air force 1 low dark grey light bone gum.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides">
+                          <div class="numbertext">4 / 4</div>
+                          <img src="air force 1 low neutral grey.jpg" style="width:100%">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
+                
+                
+                        <div class="column">
+                          <img class="demo cursor" src="air force 1 medium olive.jpg" style="width:100%" onclick="currentSlide(1)" alt=" ">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="air force 1 low blue legend.jpg" style="width:100%" onclick="currentSlide(2)" alt=" ">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="air force 1 low dark grey light bone gum.jpg" style="width:100%" onclick="currentSlide(3)" alt=" ">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="air force 1 low neutral grey.jpg" style="width:100%" onclick="currentSlide(4)" alt=" ">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          
+            <input name="tabbed" id="tabbed2" onclick="tabcheck2()" type="radio">
+            <section class="tabbed">
+              <h1>
+                <label for="tabbed2">Specifications</label>
+              </h1>
+              <div class="tabbed-specs">
+                <table style="width:90%" class="tabbed-table">
+                  <tr class="spec-cust-rating">
+                    <th>&nbsp;Customer Rating</th>
+                    <td>
+                      <div class="product-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <span>(5)</span>
+                      </div>
+                    </td>
+                  </tr>
 
-            <tr>
-              <td><a><img src="1.jpg" class="center-pic"></a></td>
-              <td><a><img src="2.jpg" class="center-pic"></a></td>
-              <td><a><img src="3.jpg" class="center-pic"></a></td>
-            </tr>
+                  <tr class="spec-cust-price">
+                    <th>Price</th>
+                    <td>$70</td>
+                  </tr>
 
-            <tr>
-              <td class="related-prod-decs"> </td>
-              <td class="related-prod-decs"> </td>
-              <td class="related-prod-decs"> </td>
-            </tr>
+                  <tr class="spec-cust-availability">
+                    <th>Availability</th>
+                    <td>YES</td>
+                  </tr>
 
-          </table>
+                  <tr class="spec-cust-weight">
+                    <th>Weight</th>
+                    <td>260g</td>
+                  </tr>
+
+                  <tr class="spec-cust-sku">
+                    <th>SKU</th>
+                    <td>AO2423 102</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          
+            <input name="tabbed" id="tabbed3" onclick="tabcheck3()" type="radio">
+            <section class="tabbed">
+              <h1>
+                <label for="tabbed3">Reviews</label>
+              </h1>
+              <div class="customer-review-option">
+                <h4>2 Comments</h4>
+                <div class="comment-option">
+                    <div class="co-item">
+                        <div class="comment-pic">
+                            <img src="yoda.jpg" alt="yoda">
+                        </div>
+                        <div class="comment-text">
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h5>Yoda <span>24 March 2020</span></h5>
+                            <div class="at-reply">Received in superb quality !</div>
+                        </div>
+                    </div>
+                    <div class="co-item">
+                        <div class="comment-pic">
+                            <img src="windu.jpg" alt="mace windu">
+                        </div>
+                        <div class="comment-text">
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h5>Mace Windu <span>4 April 2020</span></h5>
+                            <div class="at-reply">Amazing Product!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-rating">
+                    <h6>Your Rating</h6>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1">
+                        <label for="star1"></label>
+                        <input type="radio" name="star" id="star2">
+                        <label for="star2"></label>
+                        <input type="radio" name="star" id="star3">
+                        <label for="star3"></label>
+                        <input type="radio" name="star" id="star4">
+                        <label for="star4"></label>
+                        <input type="radio" name="star" id="star5">
+                        <label for="star5"></label>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="leave-comment">
+                    <h4>Leave A Comment</h4>
+                    <form action="#" class="comment-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Email (required)" pattern="[a-z0-9._%+-]{1,40}[@]{1}[a-z]{1,10}[.]{1}[a-z]{3}" required>
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea placeholder="Enter your comments here!"></textarea>
+                                <button type="submit" class="site-btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </section>
+
+          </div>
+
         </div>
 
-          
       <div class="col-lg-3">
         <div class="jumbotron">
           <div class="filter-widget">
@@ -280,7 +462,6 @@
             <ul class="filter-catagories">
                 <li><a href="#">Men</a></li>
                 <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
             </ul>
           </div>
           <div class="filter-widget">
@@ -321,74 +502,81 @@
             <h4 class="fw-title">Price</h4>
             <div class="filter-range-wrap">
                 <div class="range-slider">
-                    <div class="price-input">
-                        <input type="text" id="minamount" placeholder="$200">
-                        <b>-</b>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" id="maxamount" placeholder="$1000">
-                    </div>
-                </div>
                 <div class="slidecontainer">
-                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  <input type="range" min="50" max="1500" value="50" class="slider" id="myRange">
+                  <p>Search for items that are priced around <b>$50</b> to <b>$<span id="demo"></span>.</b></p>
                 </div>
+              </div>
             </div>
-            <a href="#" class="filter-btn">Filter</a>
           </div>
-
+ 
           <div class="filter-widget">
             <h4 class="fw-title">Color</h4>
             <div class="fw-color-choose">
-                <div class="cs-item">
-                    <input type="radio" id="cs-black">
-                    <label class="cs-black" for="cs-black">Black</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-violet">
-                    <label class="cs-violet" for="cs-violet">Violet</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-blue">
-                    <label class="cs-blue" for="cs-blue">Blue</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-yellow">
-                    <label class="cs-yellow" for="cs-yellow">Yellow</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-red">
-                    <label class="cs-red" for="cs-red">Red</label>
-                </div>
-                <div class="cs-item">
-                    <input type="radio" id="cs-green">
-                    <label class="cs-green" for="cs-green">Green</label>
-                </div>
+              <div class="bc-item">
+                  <label for="cs-black">
+                      <span id="cs-label">Black</span>
+                      <input type="checkbox" id="cs-black">
+                      <span class="checkmark1"></span>
+                  </label>
+              </div>
+              <div class="bc-item">
+                  <label for="cs-violet">
+                      <span id="cs-label">Violet</span>
+                      <input type="checkbox" id="cs-violet">
+                      <span class="checkmark2"></span>
+                  </label>
+              </div>
+              <div class="bc-item">
+                  <label for="cs-blue">
+                      <span id="cs-label">Blue</span>
+                      <input type="checkbox" id="cs-blue">
+                      <span class="checkmark3"></span>
+                  </label>
+              </div>
+              <div class="bc-item">
+                  <label for="cs-yellow">
+                      <span id="cs-label">Yellow</span>
+                      <input type="checkbox" id="cs-yellow">
+                      <span class="checkmark4"></span>
+                  </label>
+              </div>
+              <div class="bc-item">
+                <label for="cs-red">
+                    <span id="cs-label">Red</span>
+                    <input type="checkbox" id="cs-red">
+                    <span class="checkmark5"></span>
+                </label>
             </div>
-         </div>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
+            <div class="bc-item">
+              <label for="cs-white">
+                  <span id="cs-label">White</span>
+                  <input type="checkbox" id="cs-white">
+                  <span class="checkmark6"></span>
+              </label>
+          </div>
+          <br/>
+          <a href="#" class="filter-btn">Filter</a>
+          </div>
+          <br/>
+
 
          <div class="filter-widget">
           <h4 class="fw-title">Size</h4>
-          <div class="fw-size-choose" id="fw-sc">
-            <button class="sc-size" id="sc-size" value="s-size">S</button>
-            <button class="sc-size" id="sc-size" value="m-size">M</button>
-            <button class="sc-size" id="sc-size" value="l-size">L</button>
-            <button class="sc-size" id="sc-size" value="xl-size">XL</button>              
+            <div class="fw-size-choose" id="fw-sc">
+              <button class="sc-size" id="sc-size" value="s-size">S</button>
+              <button class="sc-size" id="sc-size" value="m-size">M</button>
+              <button class="sc-size" id="sc-size" value="l-size">L</button>
+              <button class="sc-size" id="sc-size" value="xl-size">XL</button>              
+            </div>
           </div>
-      </div>
 
           <div class="filter-widget">
               <h4 class="fw-title">Tags</h4>
               <div class="fw-tags">
-                  <a href="#">Towel</a>
-                  <a href="#">Shoes</a>
-                  <a href="#">Coat</a>
-                  <a href="#">Dresses</a>
-                  <a href="#">Trousers</a>
-                  <a href="#">Men's hats</a>
-                  <a href="#">Backpack</a>
+                  <a href="#">Men Shoes</a>
+                  <a href="#">Women Shoes</a>
+                  <a href="#">Accessories</a>
               </div>
           </div>
         </div>
@@ -414,29 +602,24 @@ function down(min) {
 </script>
 
 <script>
-// Get the modal
-var modal = document.getElementById("product-big-url");
+    var modal = document.getElementById("product-big-url");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("product");
-var modalImg = document.getElementById("img01");
-img.onclick = function(){
-modal.style.display = "block";
-modalImg.src = this.src;
- captionText.innerHTML = this.alt;
-}
+    var img = document.getElementById("product");
+    var modalImg = document.getElementById("img01");
+    img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
- modal.style.display = "none";
-}
+    span.onclick = function() { 
+    modal.style.display = "none";
+    }
 </script>
 
 <script>
-  // Add active class to the current button (highlight it)
   var header = document.getElementById("fw-sc");
   var btns = header.getElementsByClassName("sc-size");
   for (var i = 0; i < btns.length; i++) {
@@ -446,39 +629,110 @@ span.onclick = function() {
     this.className += " active";
     });
   }
-  </script>
+</script>
+
 
 <script>
    function enableUSsize() {
     var el = document.getElementById("dropdown-menu-size");
     el.classList.remove("disabled");
-    document.getElementByID("shoe-uk-size").style.display="none";
-    document.getElementByID("shoe-eu-size").style.display="none";
+    document.getElementById("shoe-us-size").style.display="";
+    document.getElementById("shoe-uk-size").style.display="none";
+    document.getElementById("shoe-eu-size").style.display="none";
   }
   function enableUKsize() {
     var el = document.getElementById("dropdown-menu-size");
     el.classList.remove("disabled");
-    document.getElementByID("shoe-us-size").style.display="none";
-    document.getElementByID("shoe-eu-size").style.display="none";
+    document.getElementById("shoe-uk-size").style.display="";
+    document.getElementById("shoe-us-size").style.display="none";
+    document.getElementById("shoe-eu-size").style.display="none";
   }
   function enableEUsize() {
     var el = document.getElementById("dropdown-menu-size");
     el.classList.remove("disabled");
-    document.getElementByID("shoe-us-size").style.display="none";
-    document.getElementByID("shoe-uk-size").style.display="none";
+    document.getElementById("shoe-eu-size").style.display="";
+    document.getElementById("shoe-us-size").style.display="none";
+    document.getElementById("shoe-uk-size").style.display="none";
   }
 </script>
 
 <script>
   var slider = document.getElementById("myRange");
   var output = document.getElementById("demo");
-  output.innerHTML = slider.value; // Display the default slider value
 
-// Update the current slider value (each time you drag the slider handle)
   slider.oninput = function() {
   output.innerHTML = this.value;
-}
+  }
+
+  output.innerHTML = slider.value; 
+
 </script>
+
+<script>
+  function tabcheck1() {
+   var el = document.getElementById("tabbed1");
+   var ell= document.getElementById("tabbed2");
+   var elll= document.getElementById("tabbed3");
+   el.classList.add("checked");
+   ell.classList.remove("checked");
+   elll.classList.remove("checked");
+ }
+ function tabcheck2() {
+   var el = document.getElementById("tabbed1");
+   var ell= document.getElementById("tabbed2");
+   var elll= document.getElementById("tabbed3");
+   el.classList.remove("checked");
+   ell.classList.add("checked");
+   elll.classList.remove("checked");
+ }
+ function tabcheck3() {
+   var el = document.getElementById("tabbed1");
+   var ell= document.getElementById("tabbed2");
+   var elll= document.getElementById("tabbed3");
+   el.classList.remove("checked");
+   ell.classList.remove("checked");
+   elll.classList.add("checked");
+ }
+</script>
+
+<script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
