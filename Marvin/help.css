@@ -230,3 +230,10 @@ body{
 .footer .footer-content .contact-form .contact-btn{
     float:right;
 }
+
+.tableFloat{
+    float: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
