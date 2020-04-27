@@ -1,235 +1,207 @@
-<!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <head>
 
-.slide-modal {
-  box-sizing: border-box;
-}
+    <!-- Your content here. -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Product Details">
+    <meta name="keywords" content="sneakers, shoes, aj1, html, airjordan1">
+    <meta http-equiv="X_UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale= 1">
 
-.slide-modal .row > .column {
-  padding: 0 8px;
-}
+    <script src="https://kit.fontawesome.com/65ee49ea06.js" crossorigin="anonymous"></script>
+    <title>Shop Name | Air Jordan 1</title>
 
-.slide-modal .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Baloo Paaji 2' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 
-.slide-modal .column {
-  float: left;
-  width: 25%;
-}
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/test.css" type="text/css">
+  
+  </head>
 
-/* The Modal (background) */
-.slide-modal .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.slide-modal .modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-.slide-modal .mySlides {
-  display: none;
-}
-
-.slide-modal .cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.slide-modal .prev,
-.slide-modal .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.slide-modal .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.slide-modal .prev:hover,
-.slide-modal .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.slide-modal .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.slide-modal img {
-  margin-bottom: -4px;
-}
-
-.slide-modal .caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-.slide-modal .demo {
-  opacity: 0.6;
-}
-
-.slide-modal .active,
-.slide-modal .demo:hover {
-  opacity: 1;
-}
-
-.slide-modal img.hover-shadow {
-  transition: 0.3s;
-}
-
-.slide-modal .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-</style>
-<body>
-
-<div class="slide-modal">
-    <h2 style="text-align:center">Lightbox</h2>
-<div class="product-lightbox">
-    <div class="row">
-  <div class="column" style="width:23%">
-    <img src="airjordanxx9(1).png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <div class="column" style="width:23%">
-    <img src="airjordanxx9(2).png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column" style="width:23%">
-    <img src="airjordanxx9(3).png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column" style="width:23%">
-    <img src="airjordanxx9(4).png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-</div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="airjordanxx9(1).png" style="width:100%">
+  <header class="header-section">
+    <select class="mdb-select md-form">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="E://GitHub/AssignmentGroup/Derrick/icons/china flag.jpeg" class="rounded-circle">
+        English (US)</option>
+      <option value="" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle">
+        English (UK)</option>
+      <option value="" data-icon="icons/china flag.jpeg" class="rounded-circle">
+        Chinese</option>
+      <label class="mdb-main-label">Example label</label>
+    </select>
+    <div class="header-top">
+        <div class="container">
+            <div class="ht-left">
+                <div class="mail-service">
+                    <i class=" fa fa-envelope"></i>
+                    hello.colorlib@gmail.com
+                </div>
+                <div class="phone-service">
+                    <i class=" fa fa-phone"></i>
+                    +65 11.188.888
+                </div>
+            </div>
+            <div class="ht-right">
+                <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                <div class="lan-selector">
+                    <select class="language_drop" name="countries" id="countries" style="width:300px;">
+                        <option value='yt' data-image="icons/uk.png" data-imagecss="flag yt"
+                            data-title="English">English</option>
+                        <option value='yu' data-image="img/flag-2.jpg" data-imagecss="flag yu"
+                            data-title="Bangladesh">German</option>
+                    </select>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-twitter-alt"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="airjordanxx9(2).png" style="width:100%">
+    <div class="container">
+        <div class="inner-header">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                    <div class="advanced-search">
+                        <button type="button" class="category-btn">All Categories</button>
+                        <div class="input-group">
+                            <input type="text" placeholder="What do you need?">
+                            <button type="button"><i class="ti-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-right col-md-3">
+                    <ul class="nav-right">
+                        <li class="heart-icon">
+                            <a href="#">
+                                <i class="icon_heart_alt"></i>
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li class="cart-icon">
+                            <a href="#">
+                                <i class="icon_bag_alt"></i>
+                                <span>3</span>
+                            </a>
+                            <div class="cart-hover">
+                                <div class="select-items">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
+                                                <td class="si-text">
+                                                    <div class="product-selected">
+                                                        <p>$60.00 x 1</p>
+                                                        <h6>Kabino Bedside Table</h6>
+                                                    </div>
+                                                </td>
+                                                <td class="si-close">
+                                                    <i class="ti-close"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>
+                                                <td class="si-text">
+                                                    <div class="product-selected">
+                                                        <p>$60.00 x 1</p>
+                                                        <h6>Kabino Bedside Table</h6>
+                                                    </div>
+                                                </td>
+                                                <td class="si-close">
+                                                    <i class="ti-close"></i>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="select-total">
+                                    <span>total:</span>
+                                    <h5>$120.00</h5>
+                                </div>
+                                <div class="select-button">
+                                    <a href="#" class="primary-btn view-card">VIEW CARD</a>
+                                    <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cart-price">$150.00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="airjordanxx9(3).png" style="width:100%">
+    <div class="nav-item">
+        <div class="container">
+            <div class="nav-depart">
+                <div class="depart-btn">
+                    <i class="ti-menu"></i>
+                    <span>All departments</span>
+                    <ul class="depart-hover">
+                        <li class="active"><a href="#">Women’s Clothing</a></li>
+                        <li><a href="#">Men’s Clothing</a></li>
+                        <li><a href="#">Underwear</a></li>
+                        <li><a href="#">Kid's Clothing</a></li>
+                        <li><a href="#">Brand Fashion</a></li>
+                        <li><a href="#">Accessories/Shoes</a></li>
+                        <li><a href="#">Luxury Brands</a></li>
+                        <li><a href="#">Brand Outdoor Apparel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="nav-menu mobile-menu">
+                <ul>
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="#">Collection</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Men's</a></li>
+                            <li><a href="#">Women's</a></li>
+                            <li><a href="#">Kid's</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#">Pages</a>
+                        <ul class="dropdown">
+                            <li><a href="./blog-details.html">Blog Details</a></li>
+                            <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                            <li><a href="./check-out.html">Checkout</a></li>
+                            <li><a href="./faq.html">Faq</a></li>
+                            <li><a href="./register.html">Register</a></li>
+                            <li><a href="./login.html">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="mobile-menu-wrap"></div>
+        </div>
     </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="airjordanxx9(4).png" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
+    <script>
+      // Material Select Initialization
+      $(document).ready(function() {
+      $('.mdb-select').materialSelect();
+      });
+    </script>
 
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-
-    <div class="column">
-      <img class="demo cursor" src="airjordanxx9(1).png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="airjordanxx9(2).png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="airjordanxx9(3).png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="airjordanxx9(4).png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-
-
-<script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </header>
 </html>
