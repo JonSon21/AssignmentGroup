@@ -131,9 +131,9 @@ table {
 td, th {
   border: 1px solid #dddddd;
   text-align: center;
+  width: 25%;
   padding: 8px;
 }
-
 
   /* Footer*/
 .footer{
