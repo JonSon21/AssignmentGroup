@@ -120,10 +120,17 @@ body{
     margin-top: 75px;
 }
 
-.all{
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.6;
-    text-align: center;
+.word{
+    margin: 50px;
+}
+
+.tableFloat{
+    column-count: 2;
+    margin: 50px;
+}
+
+.card{
+    margin-bottom: 50px;
 }
 
 /* Footer*/
@@ -231,9 +238,3 @@ body{
     float:right;
 }
 
-.tableFloat{
-    float: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
