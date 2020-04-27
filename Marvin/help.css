@@ -2,17 +2,17 @@ body{
     background-size:cover;
     font-family:Arial;
     margin:0;
-}
+  }
   
-.stickyCSS ul{
+  .stickyCSS ul{
     margin:0px;
     padding:0px;
     list-style:none;
-}
+  }
   
-.stickyCSS ul li{
+  .stickyCSS ul li{
     float:left;
-    width:160px;
+    width:140px;
     height:40px;
     background-color: black;
     opacity:.8;
@@ -21,43 +21,44 @@ body{
     font-size:20px;
     color:white;
     font-family: "Lobster", serif;
-}
+   
+  }
   
-.stickyCSS{
+  .stickyCSS{
     position: fixed;
     top:0;
     width: 100%;
     z-index: 1;
-}
+  }
   
-.stickyCSS ul li a{
+  .stickyCSS ul li a{
     text-decoration: none;
     color:white;
     display:block;
-}
+  }
   
-.stickyCSS ul li a:hover{
+  .stickyCSS ul li a:hover{
     background-color: grey;
-}
+  }
   
-.stickyCSS ul li ul li{
+  .stickyCSS ul li ul li{
     display: none;
-}
+  }
   
-.stickyCSS ul li:hover ul li{
+  .stickyCSS ul li:hover ul li{
     display:block; 
-}
+  }
   
-* {
+  * {
     box-sizing: border-box;
-}
+  }
   
-.topnav {
+  .topnav {
     overflow: hidden;
     background-color: #e9e9e9;
-}
+  }
   
-.topnav a {
+  .topnav a {
     float: left;
     display: block;
     color: black;
@@ -65,25 +66,25 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-}
+  }
   
-.topnav a:hover {
+  .topnav a:hover {
     background-color:#ddd;
     color: black;
-}
+  }
   
-.topnav .search-container {
+  .topnav .search-container {
     float: right;
-}
+  }
   
-.topnav input[type=text] {
+  .topnav input[type=text] {
     padding: 6px;
     margin-top: 8px;
     font-size: 17px;
     border: none;
-}
+  }
   
-.topnav .search-container button {
+  .topnav .search-container button {
     float: right;
     padding: 6px ;
     margin-top: 8px;
@@ -92,13 +93,13 @@ body{
     font-size: 17px;
     border: none;
     cursor: pointer;
-}
+  }
   
-.topnav .search-container button:hover {
+  .topnav .search-container button:hover {
     background:#ddd;
-}
+  }
   
-@media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .topnav .search-container {
       float: none;
     }
@@ -113,7 +114,7 @@ body{
     .topnav input[type=text] {
       border: 1px solid #ccc;  
     }
-}
+  }
 
 .container .help h1{
     text-align: center;
