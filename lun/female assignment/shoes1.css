@@ -256,7 +256,7 @@ body{
     margin-bottom:8px;
   }
   
-  .footer .footer-content .about .socials > a {
+  .footer .footer-content .about .socials a {
     border:1px solid gray;
     width:45px;
     height:41px;
@@ -270,19 +270,19 @@ body{
   }
   
   
-  .footer .footer-content .about .socials > a:hover{
+  .footer .footer-content .about .socials a:hover{
     border:1px solid white;
     color:white;
     transition:all .3s;
   }
   
-  .footer .footer-content .links ul > a{
+  .footer .footer-content .links ul a{
   display:block;
   margin-bottom:10px;
   color:white;
   }
   
-  .footer .footer-content .links ul > a:hover{
+  .footer .footer-content .links ul a:hover{
   color:white;
   margin-left:15px;
   transition: all .3s
