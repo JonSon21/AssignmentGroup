@@ -66,7 +66,7 @@ $(document).ready(function(){
     
     child = $(this).parent().children(".qt");
     
-    if(parseInt(child.html()) > 1) {
+    if(parseInt(child.html()) >= 1) {
       child.html(parseInt(child.html()) - 1);
     }
     
