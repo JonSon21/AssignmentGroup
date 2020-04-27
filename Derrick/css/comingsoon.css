@@ -53,6 +53,13 @@
 	font-size:25px;
 }
 
+.cs-sidebar h4 span{
+	font-size:14px;
+	color: #777777;
+	font-weight: 600;
+	margin-bottom: 28px;
+}
+
 .cs-sidebar .search-form form {
 	position:relative;
 }
@@ -79,6 +86,16 @@
 	cursor: pointer;
 }
 
+.cs-sidebar .cs-category ul li button{
+	font-size: 16px;
+	color: #636363;
+	text-decoration: none;
+}
+
+.cs-sidebar .cs-category ul li button:hover {
+	color: #131212;
+}
+
 .cs-sidebar .cs-category {
 	margin-bottom: 60px;
 }
@@ -94,15 +111,49 @@
 	font-weight:400;
 }
 
-.cs-sidebar .cs-category ul li a {
+.cs-sidebar .cs-brand ul li button {
 	font-size: 16px;
 	color: #636363;
-	line-height: 39px;
 	text-decoration: none;
 }
 
-.cs-sidebar .cs-category ul li a:hover {
-	color: #1b1b1b;
+.cs-sidebar .cs-brand ul li button:hover {
+	color: #131212;
+}
+
+.cs-sidebar .cs-brand {
+	margin-bottom: 60px;
+}
+
+.cs-sidebar .cs-brand ul li {
+	list-style: none;
+}
+
+.cs-sidebar .cs-brand li {
+	font-family:'Roboto';
+	position:relative;
+	right:37px;
+	font-weight:400;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+.filter-item{
+	display: none;
+}
+
+.show {
+	display: block;
+	-webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
 .cs-sidebar .recent-post {
@@ -116,12 +167,8 @@
 }
 
 .cs-sidebar .recent-post .recent-blog .rb-item {
-	overflow: hidden;
-	margin-bottom: 30px;
 	display: block;
-}
-
-.cs-sidebar a{
+	margin-bottom: 30px;
 	text-decoration: none;
 }
 
@@ -190,7 +237,7 @@
 }
 
 .cs-item {
-	margin-bottom: 100px;
+	margin-bottom: 120px;
 }
 
 .cs-item .cs-pic .saletag {
@@ -213,7 +260,9 @@
 
 .cs-item .cs-pic img{
 	max-width: 350px;
-	max-height: 600px;
+	max-height: 180px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 .cs-item .cs-text {
@@ -227,6 +276,7 @@
 	line-height: 30px;
 	font-size: 25px;
 	font-family:'Raleway';
+	float: left;
 }
 
 .cs-item .cs-text p {
@@ -263,7 +313,7 @@
 	background-color: white;
 	cursor: pointer;
 	padding: 18px;
-	width: 100%;
+	width:100%;
 	border: none;
 	text-align: left;
 	outline: none;
@@ -271,18 +321,19 @@
 }
 
 .collapsible:after {
+	font-family:"Font Awesome 5 Free";
 	content: '\002B';
 	color: black;
 	font-size: 20px;
-	font-weight: bold;
 	float: right;
 	margin-left: 5px;
 }
   
 .active:after {
+	font-family:"Font Awesome 5 Free";
 	content: "\2212";
 }
-  
+
 .desc-content {
 	padding: 0 18px;
 	display: none;
@@ -305,10 +356,13 @@
 	border-radius: 4px;
   }
 
+.loading-more{
+	text-align:center;
+}
+
 .loading-more a{
 	  font-family:'Arial';
 }
-
 
 .loading-more i{
 	color:rgb(114, 174, 253);

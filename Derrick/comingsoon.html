@@ -79,47 +79,58 @@
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
+
                             <div class="cs-category">
-                                <h4>Categories</h4>
+                                <h4><span>Filter by:</span><br/>Categories</h4>
                                 <ul>
-                                    <li><a href="#">Men Shoes</a></li>
-                                    <li><a href="#">Women Shoes</a></li>
-                                    <li><a href="#">Accessories</a></li>
+                                    <li><button class="btn" onclick="filterSelection('all')">All Shoes</button></li>
+                                    <li><button class="btn" onclick="filterSelection('boy')">Men Shoes</button></li>
+                                    <li><button class="btn" onclick="filterSelection('girl')">Women Shoes</button></li>
+                                </ul>
+                            </div>
+
+                            <div class="cs-brand">
+                                <h4><span>Filter by:</span><br/>Brand</h4>
+                                <ul>
+                                    <li><button class="btn" onclick="filterSelection('all')">All Shoes</button></li>
+                                    <li><button class="btn" onclick="filterSelection('nike')">Nike</button></li>
+                                    <li><button class="btn" onclick="filterSelection('adidas')">Adidas</button></li>
+                                    <li><button class="btn" onclick="filterSelection('puma')">Puma</button></li>
                                 </ul>
                             </div>
                             <div class="recent-post">
                                 <h4>Latest Additions</h4>
                                 <div class="recent-blog">
-                                    <a href="#" class="rb-item">
+                                    <a href="#" target="_blank" class="rb-item">
                                         <div class="rb-pic">
-                                            <img src="yeezy boost cinder.jpg" alt="yeezy boost v2 cinder">
+                                            <img src="shoes/yeezy boost cinder.jpg" alt="yeezy boost v2 cinder">
                                         </div>
                                         <div class="rb-text">
                                             <h6>Yeezy Boost 350 V2 Cinder</h6>
                                             <p>Adidas <span>- April 20, 2020</span></p>
                                         </div>
                                     </a>
-                                    <a href="#" class="rb-item">
+                                    <a href="#" target="_blank" class="rb-item">
                                         <div class="rb-pic">
-                                            <img src="yeezy boost zebra.jpg" alt="yeezy boost">
+                                            <img src="shoes/yeezy boost zebra.jpg" alt="yeezy boost">
                                         </div>
                                         <div class="rb-text">
                                             <h6>Yeezy Boost 350 V2 Zebra</h6>
                                             <p>Adidas <span>- May 1, 2020</span></p>
                                         </div>
                                     </a>
-                                    <a href="product.html" class="rb-item">
+                                    <a href="product.html" target="_blank" class="rb-item">
                                         <div class="rb-pic">
-                                            <img src="air jordan xx9.jpg" alt="air max 95 black crimson">
+                                            <img src="shoes/af1low whitegymred(h).jpg" alt="air force 1 low white gym red">
                                         </div>
                                         <div class="rb-text">
-                                            <h6>Air Jordan XX9 Photo Reel</h6>
+                                            <h6>Nike Air Force 1 Low</h6>
                                             <p>Nike <span>- April 21, 2020</span></p>
                                         </div>
                                     </a>
-                                    <a href="#" class="rb-item">
+                                    <a href="#" target="_blank" class="rb-item">
                                         <div class="rb-pic">
-                                            <img src="puma blaze of glory.jpg" alt="blaze of glory">
+                                            <img src="shoes/puma blaze of glory.jpg" alt="blaze of glory">
                                         </div>
                                         <div class="rb-text">
                                             <h6>Blaze Of Glory Limitless Solebox Champagne</h6>
@@ -143,72 +154,145 @@
                     <div class="cs-title">
                         <i class="far fa-calendar-check" id="calendar-icon"></i>Coming Soon
                     </div>
-                    <div class="row">
+                    <div class="row" id="cs-row">
                         <div class="col-lg-6 col-sm-6">
-                            <div class="cs-item">
+                            <div class="cs-item filter-item boy nike">
                                 <div class="cs-pic">
-                                    <div class="saletag">&nbsp;&nbsp;NEW</div>
-                                    <img src="aj1 retro high.jpg" style="display:inline-block;" class="cs-product" alt="aj 1 retro high">
+                                    <img src="shoes/aj1 retro high.jpg" style="display:inline-block;" class="cs-product" alt="aj 1 retro high">
                                     
                                 </div>
                                 <div class="cs-text">
                                         <button type="button" class="collapsible">Jordan 1 Retro High Court</button>
                                     <div class="desc-content">
-                                        <p id="desc-left">Nike <span>- March 20, 2021</span></p>
+                                        <p id="desc-left">Nike <span>- March 7, 2020</span></p>
                                         <p class="cs-item" id="countdown1"></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="cs-item">
+                            <div class="cs-item filter-item boy nike">
                                 <div class="cs-pic">
-                                    <img src="jordan 6 retro.jpg" alt="">
+                                    <img src="shoes/jordan 6 retro.jpg" alt="aj 6 retro dmp">
                                 </div>
                                 <div class="cs-text">
                                         <button type="button" class="collapsible">Jordan 6 Retro DMP (2020)</button>
                                     <div class="desc-content">
-                                        <p>Nike <span>- July 19, 2020</span></p>
+                                        <p>Nike <span>- May 7, 2020</span></p>
                                         <p class="cs-item" id="countdown2"></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="cs-item">
+                            <div class="cs-item filter-item boy adidas">
                                 <div class="cs-pic">
-                                    <img src="yeezy 700 alvah.jpg" alt="">
+                                    <img src="shoes/yeezy 700 alvah.jpg" alt="yeezy 700 alvah">
                                 </div>
                                 <div class="cs-text">
-                                        <button type="button" class="collapsible">Yeezy 700 V3 Alvah</button>
+                                    <button type="button" class="collapsible">Yeezy 700 V3 Alvah</button>
                                     <div class="desc-content">
-                                        <p>Adidas <span>- July 20, 2020</span></p>
+                                        <p>Adidas <span>- May 8, 2020</span></p>
                                         <p class="cs-item" id="countdown3"></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="cs-item">
+                            <div class="cs-item filter-item boy adidas">
                                 <div class="cs-pic">
-                                    <img src="yeezy boost.jpg" alt="">
+                                    <img src="shoes/yeezy boost.jpg" alt="yeezy boost 350 v2 linen">
                                 </div>
                                 <div class="cs-text">
                                     <button type="button" class="collapsible">Yeezy Boost 350 V2 Linen</button>
-                                <div class="desc-content">
-                                    <p>Adidas <span>- March 20, 2022</span></p>
-                                    <p class="cs-item" id="countdown4"></p>
+                                    <div class="desc-content">
+                                        <p>Adidas <span>- May 8, 2020</span></p>
+                                        <p class="cs-item" id="countdown4"></p>
+                                    </div>
                                 </div>
                             </div> 
                         </div>
-                      
-                        <div class="col-lg-12">
-                            <div class="loading-more">
-                                <p>
-                                    <i class="fas fa-spinner fa-pulse"></i>
-                                    <a href="#">Loading More</a>
-                                </p>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="cs-item filter-item girl adidas">
+                                <div class="cs-pic">
+                                    <img src="shoes/nmd r1 white rose.jpg" alt="nmd r1 white rose">
+                                </div>
+                                <div class="cs-text">
+                                    <button type="button" class="collapsible">NMD R1 White Rose</button>
+                                    <div class="desc-content">
+                                        <p>Adidas <span>- July 1, 2020</span></p>
+                                        <p class="cs-item" id="countdown5"></p>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="cs-item filter-item girl adidas">
+                                <div class="cs-pic">
+                                    <img src="shoes/nmd r1 primeknit pink rose.jpg" alt="nmd r1 primeknit pink rose">
+                                </div>
+                                <div class="cs-text">
+                                    <button type="button" class="collapsible">NMD R1 Primeknit Pink Rose</button>
+                                    <div class="desc-content">
+                                        <p>Adidas <span>- June 2, 2020</span></p>
+                                        <p class="cs-item" id="countdown6"></p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="cs-item filter-item girl nike">
+                                <div class="cs-pic">
+                                    <img src="shoes/jordan 1 retro high season of her sunset tint.jpg" alt="jordan 1 retro high season of her sunset tint">
+                                </div>
+                                <div class="cs-text">
+                                    <button type="button" class="collapsible">Jordan 1 Retro High Season of Her Sunset Tint</button>
+                                    <div class="desc-content">
+                                        <p>Nike <span>- June 2, 2020</span></p>
+                                        <p class="cs-item" id="countdown7"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="cs-item filter-item girl nike">
+                                <div class="cs-pic">
+                                    <div class="saletag">&nbsp;&nbsp;NEW</div>
+                                    <img src="shoes/air more uptempo barley green.jpg" alt="air more uptempo barley green">
+                                </div>
+                                <div class="cs-text">
+                                    <button type="button" class="collapsible">Air More Uptempo Barley Green</button>
+                                    <div class="desc-content">
+                                        <p>Nike <span>- June 3, 2020</span></p>
+                                        <p class="cs-item" id="countdown8"></p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> 
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="cs-item filter-item girl puma">
+                                <div class="cs-pic">
+                                    <div class="saletag">&nbsp;&nbsp;NEW</div>
+                                    <img src="shoes/puma cleated creeper rihanna fenty suede green.jpg" alt="cleated creeper rihanna fenty suede green">
+                                </div>
+                                <div class="cs-text">
+                                    <button type="button" class="collapsible">Cleated Creeper Rihanna Fenty Suede Green</button>
+                                    <div class="desc-content">
+                                        <p>Puma <span>- June 3, 2020</span></p>
+                                        <p class="cs-item" id="countdown9"></p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                      
+                    <div class="col-lg-12">
+                        <div class="loading-more">
+                            <p>
+                                <i class="fas fa-spinner fa-pulse"></i>
+                                <a href="#">Loading More</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -232,17 +316,17 @@
             }
           });
         }
-        </script>
+    </script>
 
     <script>
 
-        var countDownDate = new Date("Mar 20, 2021 00:10:00").getTime();
+        var countDownDate1 = new Date("April 26, 2020 00:10:00").getTime();
         
         var x = setInterval(function() {
         
           var now = new Date().getTime();
             
-          var distance = countDownDate - now;
+          var distance = countDownDate1 - now;
             
           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -254,88 +338,247 @@
             
           if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown1").innerHTML = "EXPIRED";
+            document.getElementById("countdown1").innerHTML = "RELEASED";
           }
         }, 1000);
-        </script>
+    </script>
 
-<script>
+    <script>
 
-    var countDownDate = new Date("July 19, 2020 00:10:00").getTime();
-    
-    var x = setInterval(function() {
-    
-      var now = new Date().getTime();
+        var countDownDate2 = new Date("May 7, 2020 20:10:00").getTime();
         
-      var distance = countDownDate - now;
+        var x = setInterval(function() {
         
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var now = new Date().getTime();
+            
+        var distance = countDownDate2 - now;
+            
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        document.getElementById("countdown2").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+            
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown2").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
+
+    <script>
+
+        var countDownDate3 = new Date("May 8, 2020 20:00:00").getTime();
         
-      document.getElementById("countdown2").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
+        var x = setInterval(function() {
         
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown2").innerHTML = "EXPIRED";
-      }
-    }, 1000);
+        var now = new Date().getTime();
+            
+        var distance = countDownDate3 - now;
+            
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        document.getElementById("countdown3").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+            
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown3").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
+
+    <script>
+
+        var countDownDate4 = new Date("May 8, 2020 23:00:00").getTime();
+        
+        var x = setInterval(function() {
+        
+        var now = new Date().getTime();
+            
+        var distance = countDownDate4 - now;
+            
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        document.getElementById("countdown4").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+            
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown4").innerHTML = "EXPIRED";
+        }
+        }, 1000);
     </script>
 
 <script>
 
-    var countDownDate = new Date("June 20, 2020 20:00:00").getTime();
+    var countDownDate5 = new Date("June 1, 2020 00:00:00").getTime();
     
     var x = setInterval(function() {
     
-      var now = new Date().getTime();
+    var now = new Date().getTime();
         
-      var distance = countDownDate - now;
+    var distance = countDownDate5 - now;
         
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-      document.getElementById("countdown3").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
+    document.getElementById("countdown5").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
         
-      if (distance < 0) {
+    if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown3").innerHTML = "EXPIRED";
-      }
+        document.getElementById("countdown5").innerHTML = "EXPIRED";
+    }
     }, 1000);
-    </script>
+</script>
 
 <script>
 
-    var countDownDate = new Date("Mar 20, 2022 20:00:00").getTime();
+    var countDownDate6 = new Date("June 2, 2020 20:00:00").getTime();
     
     var x = setInterval(function() {
     
-      var now = new Date().getTime();
+    var now = new Date().getTime();
         
-      var distance = countDownDate - now;
+    var distance = countDownDate6 - now;
         
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-      document.getElementById("countdown4").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
+    document.getElementById("countdown6").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
         
-      if (distance < 0) {
+    if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown4").innerHTML = "EXPIRED";
-      }
+        document.getElementById("countdown6").innerHTML = "EXPIRED";
+    }
     }, 1000);
-    </script>
+</script>
+
+<script>
+
+    var countDownDate7 = new Date("June 2, 2020 20:00:00").getTime();
+    
+    var x = setInterval(function() {
+    
+    var now = new Date().getTime();
+        
+    var distance = countDownDate7 - now;
+        
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    document.getElementById("countdown7").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+        
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown7").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+</script>
+
+<script>
+
+    var countDownDate8 = new Date("June 3, 2020 21:00:00").getTime();
+    
+    var x = setInterval(function() {
+    
+    var now = new Date().getTime();
+        
+    var distance = countDownDate8 - now;
+        
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    document.getElementById("countdown8").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+        
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown8").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+</script>
+
+<script>
+
+    var countDownDate8 = new Date("June 3, 2020 23:00:00").getTime();
+    
+    var x = setInterval(function() {
+    
+    var now = new Date().getTime();
+        
+    var distance = countDownDate8 - now;
+        
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    document.getElementById("countdown9").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+        
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown9").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+</script>
+
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filter-item");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+    }
+    }
+
+    function AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+    }
+
+    function RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+    }
+    element.className = arr1.join(" ");
+    }
+</script>
    
 
-
+<script src="comingsoon.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
