@@ -103,6 +103,7 @@ html, body {
         z-index: 1;
     }
     
+    
     ul li{
         float:left;
         width:200px;
@@ -237,6 +238,7 @@ html, body {
   padding :20px;
 }
 
+ 
 .footer{
   background: black;
   color:white;
@@ -330,6 +332,7 @@ transition: all .3s
 
 .footer .footer-content .contact-form .contact-input:focus{
   background:white;
+  color: white;
 }
 
 .btn-big{
@@ -340,3 +343,4 @@ transition: all .3s
 .footer .footer-content .contact-form .contact-btn{
   float:right;
 }
+
