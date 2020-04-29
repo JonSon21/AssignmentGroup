@@ -121,6 +121,28 @@ body{
   margin-top: 75px;
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 1200px;
+  margin: 30px;
+}
+
+td, th {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 3px solid #dddddd;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.paragraph{
+  line-height: 1.5;
+  margin: 50px;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 /* Footer*/
 .footer{
     background: black;
