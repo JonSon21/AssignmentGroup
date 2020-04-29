@@ -1,56 +1,196 @@
 <!DOCTYPE html>
 <html>
       
-      <head>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="../Derrick/./css/./fontawesome/css/all.css" type="text/css">
 
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link href="./mens.css" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
-      </head>
+      <link rel="stylesheet" href="./mens.css" >
+</head>
 
-<header>
-    <div class="stickyCSS">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="./mens.html">Men</a>
-                <ul>
-                    <li><a href="#">Life Style</a></li>
-                    <li><a href="#">Gym</a></li>
-                    <li><a href="#">Basketball</a></li>
-                    <li><a href="#">Running</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Women</a>
-                <ul>
-                    <li><a href="#">Life</a></li>
-                    <li><a href="#">Gym</a></li>
-                    <li><a href="#">Train</a></li>
-                    <li><a href="#">Run</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Coming Soon</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Help</a></li>
+      <div class="stickyCSS">
+        <header class="header-section"> 
+          <audio id="background-music" src="../Derrick/./back-in-black-official-video.mp3"></audio>
+         
+          <div class="header-top">
+              <div class="container" style="width:100%;">
+                  <div class="ht-left">
+                      <div class="mail-service">
+                          <i class=" fa fa-envelope"></i>
+                          knnccb.shop@gmail.com
+                      </div>
+                      <div class="phone-service">
+                          <i class=" fa fa-phone"></i>
+                          03-4145 0123
+                      </div>
+                  </div>
+                  <div class="ht-right">
+                    <a href="./registerform.html" class="login-panel"><i class="fa fa-user"></i>Register Form</a>
+                      <div class="lan-selector">
+                          <i class="fas fa-globe-asia"></i>
+                          <select class="lang-drop" name="lang" id="lang-change" style="width:150px;font-family:'Lato';font-size:14px;">
+                              <option value='english-uk' 
+                                  data-title="English-UK">English (UK)</option>
+                              <option value='english-us' 
+                                  data-title="English-US">English (US)</option>
+                              <option value='chinese' 
+                                  data-title="Chinese">Chinese</option>
+                          </select>
+                      </div>
+                      <div class="top-social">
+                          <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container" style="width:100%;">
+              <div class="inner-header">
+                  <div class="row">
+                      <div class="col-lg-2 col-md-2">
+                          <div class="logo">
+                              <a href="./index.html">
+                                  <img src="../Derrick/icons/original (1).jpg" alt="logo">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-lg-10 col-md-10">
+                        <div class="row">
+                          <div class="col-lg-9 col-md-9">
+                              <div class="advanced-search">
+                                  <div class="row">
+                                      <button type="button" class="col-lg-3 col-md-3 category-btn music-play" value="PLAY" onclick="togglePlay()">Some music?<span><i id="music-skull" class="fas fa-skull"></i></span></button>
+                                      <button type="button" class="col-lg-1 col-md-1 category-btn music-volup" value="VOLUP" onclick="volumeUp()"><span><i id="music-plus"class="fas fa-plus"></i></span></button>
+                                      <button type="button" class="col-lg-1 col-md-1 category-btn music-voldown" value="VOLDOWN" onclick="volumeDown()"><span><i id="music-minus"class="fas fa-minus"></i></span></button>
+                                      <input type="text" class= "col-lg-6 col-md-6" placeholder="What do you need?">
+                                  </div>
+                              </div>
+                              <div class="company-name"><b>【k】【n】【n】【c】【c】【b】</b><br/><span>kidz newz network cheesy cheeze burger | selling shoes since 2020</span></div>
+                          </div>
+                          <div class="col-lg-3 col-md-3">
+                            <div class="nav-right">
+                                  <div class="heart-icon">
+                                    <a href="#">
+                                      <i class="far fa-heart"></i>
+                                        <span>1</span>
+                                    </a>
+                                  </div>
+                                  <div class="cart-icon">
+                                    <a href="#">
+                                      <i class="fas fa-shopping-bag"></i>
+                                      <span>2</span>
+                                    </a>
+                                    <div class="cart-hover">
+                                        <div class="select-items">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="si-pic"><img src="../Derrick/./shoes/./af1low whitegymred(3).jpg" alt="product 1"></td>
+                                                        <td class="si-text">
+                                                            <div class="product-selected">
+                                                                <a href="../Derrick/./product.html">
+                                                                  <p>$70.00 x 1</p>
+                                                                  <h6>Nike Air Force 1 Low</h6>
+                                                                </a> 
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="si-pic"><img src="../Derrick/./shoes/./yeezy boost cinder.jpg"  alt="product 2"></td>
+                                                        <td class="si-text">
+                                                            <div class="product-selected">
+                                                                <a>
+                                                                  <p>$60.00 x 1</p>
+                                                                  <h6>adidas Yeezy Boost 350 V2 Cinder</h6>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="select-total">
+                                            <h4>Total:</h4>
+                                            <h5>$130.00</h5>
+                                        </div>
+                                        <div class="select-button">
+                                            <a href="shoppingcart.html" class="primary-btn view-cart">VIEW CART</a>
+                                            <a href="feedbackform.html" class="primary-btn feedback-btn">PROVIDE FEEDBACK</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 cart-price">$130.00</div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav-item">
+              <div class="container">
+                  <nav class="nav-menu mobile-menu">
+                      <ul>
+                          <li class="active"><a id="home-select" href="../Marvin/./homepage.html">Home</a></li>
+                          <li><a id="shop-select"href="#">Shop</a>
+                              <ul class="dropdown">
+                                  <li><a id="shop-men-select" href="./mens.html">Men</a></li>
+                                  <li><a id="shop-women-select" href="../lun/">Women</a></li>
+                              </ul>
+                          </li>
+                          <li><a id="coming-select" href="../Derrick/./comingsoon.html">Coming Soon</a></li>
+                          <li><a id="contactus-select" href="../Derrick/./contactus.html">Contact Us</a></li>
+                          <li><a id="coming-select" href="./feedbackform.html">Feedback Form</a></li>
+                          <li><a id="help-select" href="../Marvin/./help.html">Help</a></li>
+                      </ul>
+                  </nav>
+                  <div id="mobile-menu-wrap"></div>
+          </div>
         
-            <div class="topnav">
-                <div class="search-container">
-                  <form action="/action_page.php">
-                    <input type="text" placeholder="Looking for Shoes?" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form>
-                </div>
-            </div>
+          <script>
+              var music = document.getElementById("background-music");
+              var isPlaying = false;
         
-        </ul>
+              function togglePlay() {
+              if (isPlaying) { 
+                music.pause()
+              } else {
+                  music.play();
+              }
+              };
+              music.onplaying = function() {
+              isPlaying = true;
+              };
+              music.onpause = function() {
+              isPlaying = false;
+              };
         
-    </div>
-</header>
-<br>
-<br>
-
+              function volumeUp() {
+                if (isPlaying) {
+                  music.volume += 0.1
+                  }
+              }
+        
+              function volumeDown() {
+                 if (isPlaying) {
+                  music.volume -= 0.1
+                  }
+              }
+            </script>
+        
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        </header>
+        
+        </div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 <body>
 
@@ -278,10 +418,10 @@
               <span><i class="fa fa-envelope"></i>&nbsp; info@sports.com</span>
             </div>
             <div class="socials">
-              <a href="#"><i class="fa fa-facebook" style="color:#DDDDDD;"></i></a>
-              <a href="#"><i class="fa fa-instagram" style="color:#DDDDDD;"></i></a>
-              <a href="#"><i class="fa fa-twitter" style="color:#DDDDDD;"></i></a>
-              <a href="#"><i class="fa fa-youtube" style="color:#DDDDDD;"></i></a>
+              <a href="#"><i class="fab fa-facebook" style="color:#DDDDDD;"></i></a>
+              <a href="#"><i class="fab fa-instagram" style="color:#DDDDDD;"></i></a>
+              <a href="#"><i class="fab fa-twitter" style="color:#DDDDDD;"></i></a>
+              <a href="#"><i class="fab fa-youtube" style="color:#DDDDDD;"></i></a>
             </div>
           </div>
     

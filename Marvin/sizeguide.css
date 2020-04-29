@@ -119,12 +119,12 @@ body{
   .guide .size h1{
     text-align: center;
     margin-top: 75px;
-}
+  }
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 1200px;
+  width: 1000px;
   margin: 30px;
 }
 
