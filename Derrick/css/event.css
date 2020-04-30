@@ -1,0 +1,418 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#clockdiv{
+    position:absolute;
+    top:20px;
+    right:20px;
+	font-family: 'Raleway';
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+    background: black;
+    opacity:0.7;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+    background: rgb(87, 86, 86);
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+    
+body {
+    background-image: url('file:///E:/GitHub/AssignmentGroup/Derrick/Banner/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.info-box{
+    display:block;
+    position:absolute;
+    left:-450px;
+    width:500px;
+    height:350px;
+    background-color:black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index:3;
+    padding:40px;
+    opacity:0.8;
+    transition:left 1s;
+}
+
+.info-box:hover{
+    left:0px;
+    transform: scale(1.1);
+}
+
+.info-box h1{
+    font-family:'Pacifico';
+    color:rgb(224, 223, 223);
+    font-weight:400;
+}
+
+.info-box h3{
+    position:absolute;
+    right:20px;
+    color:white;
+    text-align:right;
+}
+
+.info-box h2{
+    font-family:'Raleway';
+    color:white;
+    font-size:20px;
+    margin-left:30px;
+}
+
+.info-box h2 span{
+    color: #afafaf;
+    font-size:15px;
+
+}
+
+.info-box p{
+    font-family:'Raleway';
+    color: #929292;
+    font-size:12px;
+    margin-left:30px;
+}
+
+.info-box a{
+    text-decoration-color:rgb(255, 0, 0);
+}
+
+.snow {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#snow-top-layer {
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.fishtank{
+    margin-top:60px;
+    height:850px;
+}
+
+.fishtank .poke img{
+    cursor:pointer;
+}
+
+.fishtank .poke #mudkip{
+    position:relative;
+    left:500px;
+}
+
+.fishtank .poke #piplup{
+    position:relative;
+    top:-160px;
+    left:160px;
+}
+
+.fishtank .poke #totodile{
+    position:relative;
+    top:-350px;
+    left:700px;
+}
+
+.fishtank .poke #magikarp{
+    position:relative;
+    top:-550px;
+    left:400px;
+}
+
+.fishtank .poke #froakie{
+    position:relative;
+    top:-900px;
+}
+
+.fishtank .poke #oshawott{
+    position:relative;
+    top:-1200px;
+    left:750px;
+}
+
+.fishtank img:hover{
+    opacity:0.7;
+}
+
+.scroll-label{
+    width:100%;
+    height:70px;
+    opacity:0.8;
+    background-color:black;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-family: 'Bangers';
+    letter-spacing: 10px;
+    text-transform:uppercase;
+    font-size:35px;
+    border:none;
+}
+
+#promotional-items{
+    margin-top:200px;
+    margin-bottom:100px;
+}
+
+.scroll-label a:hover{
+    opacity:0.8;
+}
+
+.scroll-label a{
+    text-decoration: none;
+    color:white;
+}
+
+.pokeman img{
+    max-height: 300px;
+}
+
+.mudkip-treasure{
+    margin-top:300px;
+}
+
+.shoe-display {
+    z-index: 2;
+    background-color:white;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+}
+
+#zoom2k{
+    position:relative;
+    top:40px;
+    left:30px;
+    height:200px;
+}
+
+.mudkip-treasure-desc .shoe-info-mudkip{
+    z-index:1;
+    visibility:hidden;
+    position:relative;
+    right:40px;
+    margin-top:75px;
+    background-color:white;
+    height:200px;
+    border-bottom-right-radius:50px;
+    border-bottom:solid 10px #53a8a8;
+    border-right:solid 10px #e0934a;
+}
+
+.mudkip-treasure-desc .shoe-info-mudkip h1{
+    margin-top:10px;
+    margin-left:30px;
+    font-size:30px;
+    font-family:'Raleway';
+}
+
+.mudkip-treasure-desc .shoe-info-mudkip p{
+    margin-left:30px;
+    font-family:'Lato';
+}
+
+.mudkip-treasure-desc .shoe-info-mudkip p span{
+    font-size:22px;
+    color:#ebb111;
+    font-weight: 600;
+}
+
+#jordanyod{
+    position:relative;
+    top:40px;
+    left:30px;
+    height:200px;
+}
+
+.piplup-treasure-desc .shoe-info-piplup{
+    z-index:1;
+    position:relative;
+    visibility:hidden;
+    top:20px;
+    left:40px;
+    margin-top:75px;
+    background-color:white;
+    height:200px;
+    border-bottom-left-radius:50px;
+    border-bottom:solid 10px#1df5f5;
+    border-left:solid 10px #35a8f5;
+}
+
+.piplup-treasure-desc .shoe-info-piplup h1{
+    margin-top:10px;
+    margin-left:30px;
+    font-size:30px;
+    font-family:'Raleway';
+}
+
+.piplup-treasure-desc .shoe-info-piplup p{
+    margin-left:30px;
+    font-family:'Lato';
+}
+
+.piplup-treasure-desc .shoe-info-piplup p span{
+    font-size:22px;
+    color:#ebb111;
+    font-weight: 600;
+}
+
+#ub2019bluegreen{
+    position:relative;
+    top:40px;
+    left:30px;
+    height:200px;
+}
+
+.totodile-treasure-desc .shoe-info-totodile{
+    z-index:1;
+    visibility:hidden;
+    position:relative;
+    right:40px;
+    margin-top:75px;
+    background-color:white;
+    height:200px;
+    border-bottom-right-radius:50px;
+    border-bottom:solid 10px #b83c3c;
+    border-right:solid 10px #53a8a8;
+}
+
+.totodile-treasure-desc .shoe-info-totodile h1{
+    margin-top:10px;
+    margin-left:30px;
+    font-size:30px;
+    font-family:'Raleway';
+}
+
+.totodile-treasure-desc .shoe-info-totodile p{
+    margin-left:30px;
+    font-family:'Lato';
+}
+
+.totodile-treasure-desc .shoe-info-totodile p span{
+    font-size:22px;
+    color:#ebb111;
+    font-weight: 600;
+}
+
+#chucktaylor{
+    position:relative;
+    top:60px;
+    left:40px;
+    height:200px;
+}
+
+.froakie-treasure-desc .shoe-info-froakie{
+    z-index:1;
+    position:relative;
+    visibility:hidden;
+    top:20px;
+    left:40px;
+    margin-top:75px;
+    background-color:white;
+    height:200px;
+    border-bottom-left-radius:50px;
+    border-bottom:solid 10px#83f1f1;
+    border-left:solid 10px #b2e7e9;
+}
+
+.froakie-treasure-desc .shoe-info-froakie h1{
+    margin-top:10px;
+    margin-left:30px;
+    font-size:30px;
+    font-family:'Raleway';
+}
+
+.froakie-treasure-desc .shoe-info-froakie p{
+    margin-left:30px;
+    font-family:'Lato';
+}
+
+.froakie-treasure-desc .shoe-info-froakie p span{
+    font-size:22px;
+    color:#ebb111;
+    font-weight: 600;
+}
+
+#jordan1lowlaserblue{
+    position:relative;
+    top:40px;
+    left:30px;
+    height:200px;
+}
+
+.oshawott-treasure-desc .shoe-info-oshawott{
+    z-index:1;
+    visibility:hidden;
+    position:relative;
+    right:40px;
+    margin-top:75px;
+    background-color:white;
+    height:200px;
+    border-bottom-right-radius:50px;
+    border-bottom:solid 10px #53a8a8;
+    border-right:solid 10px #371bd8;
+}
+
+.oshawott-treasure-desc .shoe-info-oshawott h1{
+    margin-top:10px;
+    margin-left:30px;
+    font-size:30px;
+    font-family:'Raleway';
+}
+
+.oshawott-treasure-desc .shoe-info-oshawott p{
+    margin-left:30px;
+    font-family:'Lato';
+}
+
+.oshawott-treasure-desc .shoe-info-oshawott p span{
+    font-size:22px;
+    color:#ebb111;
+    font-weight: 600;
+}
+
+
