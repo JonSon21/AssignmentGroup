@@ -10,12 +10,12 @@ body{
 
 .header-top {
 	display: flex;
-    background-color:black;
-    color:rgb(216, 216, 216);
+  background-color:black;
+  color:rgb(216, 216, 216);
 }
 
 .header-top .ht-left {
-    float: left;
+  float: left;
 }
 
 .header-top .ht-left .mail-service {
@@ -49,61 +49,61 @@ body{
 }
 
 .header-top .ht-right .login-panel {
-    font-family:'Lato';
-    color: rgb(216, 216, 216); 
-    text-decoration: none;
+  font-family:'Lato';
+  color: rgb(216, 216, 216); 
+  text-decoration: none;
 	float:right;
 	font-size: 16px;
 	padding-left: 20px;
-    border-left: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
 	padding-top: 15px;
-    padding-bottom: 15px;
-    text-align:center;
+  padding-bottom: 15px;
+  text-align:center;
 }
 
 .header-top .ht-right .login-panel i {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .header-top .ht-right .lan-selector {
-    margin-left: 20px;
-    margin-right: 20px;
-    display:inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  display:inline-block;
 }
 
 .header-top .ht-right .top-social {
-    display:inline-block;
-    padding:15px;
-    border-left: 1px solid #e5e5e5;
-    cursor: pointer;
-    text-align: center;
+  display:inline-block;
+  padding:15px;
+  border-left: 1px solid #e5e5e5;
+  cursor: pointer;
+  text-align: center;
 }
 
 .header-top .ht-right .top-social a {
-    color: rgb(216, 216, 216);
-    text-decoration: none;
-    font-size: 14px;
-    margin-left:5px;
-    margin-right:5px;
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+  font-size: 14px;
+  margin-left:5px;
+  margin-right:5px;
 }
 
 .ht-right .lan-selector select{
-    background-color: black;
-    color: rgb(216, 216, 216);
-    border:none; 
-    padding-bottom:2px;
-    border-bottom: 1px solid #636363;
+  background-color: black;
+  color: rgb(216, 216, 216);
+  border:none; 
+  padding-bottom:2px;
+  border-bottom: 1px solid #636363;
 }
 
 .inner-header {
-    padding: 39px 0;
+  padding: 39px 0;
 }
 
 .inner-header .logo img{
 	position:absolute;
 	right:20px;
-    width:200px;
-    height:120px;
+  width:200px;
+  height:120px;
 }
 
 .inner-header .logo a {
@@ -116,7 +116,7 @@ body{
 }
 
 .inner-header .advanced-search .category-btn{
-    width: 30%;
+  width: 30%;
 	background: white;
 	border:none;
 	border-right:solid 1px #e0e0e0;
@@ -151,7 +151,7 @@ body{
 }
 
 input:focus::-webkit-input-placeholder {
-    color: transparent;
+  color: transparent;
 }
 
 .company-name{
@@ -172,7 +172,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .inner-header .nav-right {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .inner-header .nav-right .heart-icon {
@@ -412,9 +412,14 @@ input:focus::-webkit-input-placeholder {
 	text-transform: capitalize;
 }
 
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
 /* Slideshow container */
 .slideshow-container {
-  max-width: 2000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -507,19 +512,20 @@ input:focus::-webkit-input-placeholder {
 
 .title{
   font-family: sans-serif;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .column {
   column-count: 3;
   float: left;
-	width: 100%;
-  padding:30px;
+  width: 100%;
+  margin-left: 40px;
 	text-decoration: none;
-	z-index: -1;
+  z-index: -1;
+  position: relative;
 }
 
-.row::after {
+.line::after {
   content: "";
   clear: both;
   display: table;
@@ -528,15 +534,10 @@ input:focus::-webkit-input-placeholder {
 * {box-sizing: border-box;}
 
 .photos {
-  position: relative;
-  width: 50%;
-  max-width: 300px;
-}
-
-.image {
   display: block;
   width: 100%;
   height: auto;
+  margin-left: 10px;
 }
 
 .overlay {
@@ -545,7 +546,7 @@ input:focus::-webkit-input-placeholder {
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
-  width: 200%;
+  width: 100%;
   transition: .5s ease;
   opacity:0;
   color: white;
@@ -554,8 +555,8 @@ input:focus::-webkit-input-placeholder {
   text-align: center;
 }
 
-.photos:hover .overlay {
-  opacity: 3;
+.column:hover .overlay {
+  opacity: 1;
 }
 
 /* Footer*/
@@ -585,7 +586,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .page-wrapper{
-min-height:100%;
+  min-height:100%;
 }
 
 .footer .footer-content .footer-section{
