@@ -414,21 +414,22 @@ body{
   
 
 .container .help h1{
-    text-align: center;
-    margin-top: 75px;
+  text-align: center;
+  margin-top: 75px;
 }
 
 .word{
-    margin: 50px;
+  margin: 50px;
 }
 
 .tableFloat{
-    column-count: 2;
-    margin: 50px;
+  column-count: 2;
+  margin: 50px;
 }
 
 .card{
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  float: left;
 }
 
 /* Footer*/
