@@ -40,7 +40,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
-    overflow-x:hidden;
 }
 
 .info-box{
