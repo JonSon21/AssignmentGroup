@@ -349,7 +349,7 @@ input:focus::-webkit-input-placeholder {
 	box-sizing:border-box;
 }
 
-.nav-item .nav-menu li.active a {
+.nav-item .nav-menu li.current a {
 	background: black;
 }
 
@@ -1040,7 +1040,7 @@ opacity: 0.7;
 	max-width:25%
 }
   
-.active, .sc-size:hover {
+.active , .sc-size:hover {
 	background-color: black;
 	color: white;
 }
@@ -1249,7 +1249,7 @@ opacity: 0.7;
 	padding: 3px 3px;
 }
   
-.slide-modal .active,
+.slide-modal .nihao,
 .slide-modal .demo:hover {
 	opacity: 1;
 }

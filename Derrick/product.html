@@ -149,7 +149,7 @@
       <div class="container">
           <nav class="nav-menu mobile-menu">
               <ul>
-                  <li class="active"><a id="home-select" href="../Marvin/homepage.html">Home</a></li>
+                  <li class="current"><a id="home-select" href="../Marvin/homepage.html">Home</a></li>
                   <li><a id="shop-select"href="#">Shop</a>
                       <ul class="dropdown">
                           <li><a id="shop-men-select"href="../JonSon/Mens.html">Men</a></li>
@@ -761,8 +761,7 @@ function down(min) {
 </script>
 
 <script>
-  var header = document.getElementById("fw-sc");
-  var btns = header.getElementsByClassName("sc-size");
+  var btns = document.getElementsByClassName("sc-size");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
@@ -867,10 +866,10 @@ function down(min) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" nihao", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " nihao";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
   </script>
