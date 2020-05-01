@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="css/header.css" type="text/css">
   </head>
 
-  <header class="header-section"> 
+  <!-- Header Section -->   
+<header class="header-section"> 
     <audio id="background-music" src="./back-in-black-official-video.mp3"></audio>
   
     <div class="header-top">
@@ -150,7 +151,7 @@
                     <li class="active"><a id="home-select" href="../Marvin/homepage.html">Home</a></li>
                     <li><a id="shop-select"href="#">Shop</a>
                         <ul class="dropdown">
-                            <li><a id="shop-men-select"href="../JonSon/Mens">Men</a></li>
+                            <li><a id="shop-men-select"href="../JonSon/Mens.html">Men</a></li>
                             <li><a id="shop-women-select"href="../lun/female.html">Women</a></li>
                         </ul>
                     </li>
@@ -162,11 +163,11 @@
             </nav>
             <div id="mobile-menu-wrap"></div>
     </div>
-
+  
     <script>
       var music = document.getElementById("background-music");
       var isPlaying = false;
-
+  
       function togglePlay() {
       if (isPlaying) {
         music.pause()
@@ -180,13 +181,13 @@
       music.onpause = function() {
       isPlaying = false;
       };
-
+  
       function volumeUp() {
         if (isPlaying) {
           music.volume += 0.1
           }
       }
-
+  
       function volumeDown() {
          if (isPlaying) {
           music.volume -= 0.1
