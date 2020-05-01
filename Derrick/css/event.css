@@ -551,3 +551,77 @@ body {
     position: relative;
     width: 150px;
 }
+
+@media only screen and (max-width: 800px) {
+
+    #clockdiv{
+        z-index:99;
+        position:absolute;
+        left:0;
+    }
+
+    .info-box{
+        position:absolute;
+        top:200px;
+    }
+
+    .shoe-box{
+        position:absolute;
+        left:1000px;
+        top:7700px;
+        z-index: 4;
+        background-color:rgb(255, 255, 255);
+        width:350px;
+        height:350px;
+        border-radius:50%;
+    }
+
+    .shoe-info-magikarp{
+        position:relative;
+        bottom:550px;
+        left:400px;
+    }
+
+    .mudkip-treasure-desc .shoe-info-mudkip{
+        position:relative;
+        bottom:330px;
+        left:310px;
+    }
+
+    .oshawott-treasure-desc .shoe-info-oshawott{
+        position:relative;
+        bottom:330px;
+        left:310px;
+    }
+
+    .totodile-treasure-desc .shoe-info-totodile{
+        position:relative;
+        bottom:330px;
+        left:310px;
+    }
+
+    .piplup-treasure-desc .shoe-info-piplup{
+        position:relative;
+        top:280px;
+        left:310px;
+
+        border-left:none;
+        border-bottom:solid 10px#1df5f5;
+        border-right:solid 10px #35a8f5;
+        border-bottom-left-radius:0px;
+        border-bottom-right-radius:50px;
+    }
+
+    .froakie-treasure-desc .shoe-info-froakie{
+        position:relative;
+        top:280px;
+        left:310px;
+
+        border-left:none;
+        border-bottom:solid 10px#83f1f1;
+        border-right:solid 10px #b2e7e9;
+        border-bottom-left-radius:0px;
+        border-bottom-right-radius:50px;
+    }
+
+  }
