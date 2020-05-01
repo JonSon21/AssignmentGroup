@@ -8,7 +8,7 @@
         <meta http-equiv="X_UA_Compatible" content="IE=edge">
         <meta name="viewport" content="width = device-width, initial-scale= 1">
     
-        <title>knnccb! | (PAGE NAME HERE HELLO)</title>
+        <title>knnccb! | Winter Event</title>
     
         <!-- Google Font -->
         <link href='https://fonts.googleapis.com/css?family=Baloo Paaji 2' rel='stylesheet'>
@@ -136,7 +136,7 @@
                     <a href="#mudkip-item"><div class="poke"><img id="mudkip" src="Banner/1.png"/></div></a>
                     <a href="#piplup-item"><div class="poke"><img id="piplup" src="Banner/2.png"/></div></a>
                     <a href="#totodile-item"><div class="poke"><img id="totodile" src="Banner/3.png"/></div></a>
-                    <a href="#magikarp-item"><div class="poke"><img id="magikarp" src="Banner/4.png"/></div></a>
+                    <a href="#oshawott-item"><div class="poke"><img id="magikarp" src="Banner/4.png"/></div></a>
                     <a href="#froakie-item"><div class="poke"><img id="froakie" src="Banner/5.png"/></div></a>
                     <a href="#oshawott-item"><div class="poke"><img id="oshawott" src="Banner/6.png"/></div></a>
                 </div>
@@ -144,6 +144,7 @@
                     <a href="#promotional-items"><i class="fas fa-angle-double-down"></i> Collect your treasure here <i class="fas fa-angle-double-down"></i></a>
                 </div>
             </div>
+        </section>
             <div id="promotional-items">
                 <div class="container mudkip-treasure" id="mudkip-item">
                     <div class="row">
@@ -277,8 +278,48 @@
                     </div>
                 </div>
             </div>
+
+            <div class="growl" id="roar-item"><img src="Banner/roar.png"></div>
+
+            <div class="magikarp-container" id="magikarp-item">
+                <div id="last-item" style="width:100%;">
+                    <div class="explosion-background">
+                        <img src="Banner/explosion.png" alt="explosion">
+                    </div>
+                    <div class="container magikarp-treasure">
+                        <div class="row">
+                            <div class="pokeman-magi">
+                                <img src="Banner/4.png" class="flail" alt="magikarp">
+                            </div>
+                            <div class="pokeman-gya">
+                                <img src="Banner/7.png" class="tilt" alt="gyarados">
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="shoe-box" onmouseover="showInfo(6)" onmouseout="hideInfo(6)">
+                            <img src="trans shoes/ld_waffle_sacai_blue_multi_450-removebg-preview.png">
+                        </div>
+    
+                        <div class="col-lg-4 shoe-info-magikarp" id="shoeInfo6">
+                            <h1>Get Magikarp's Treasure before<br/> he escapes from Gyarados!</h1>
+                            <p>Get a LD Waffle Sacai Blue Multi <span><br/>at $550</span></p>
+                        </div>
+                    </div>
+                   
+                </div>  
+            </div>
+
+            <div class="scroll-label">
+                <a href="#clockdiv"> Back to Top!</a>
+            </div>
+
+              
+
+            
+
        
-        </section>
 
         <script>
             function getTimeRemaining(endtime) {
@@ -346,6 +387,10 @@
                     x = document.getElementById("shoeInfo5");
                     x.style.visibility = "visible";
                 }
+                if(x==6){
+                    x = document.getElementById("shoeInfo6");
+                    x.style.visibility = "visible";
+                }
             }
 
             function hideInfo(x) {
@@ -367,6 +412,10 @@
                 }
                 if(x==5){
                     x = document.getElementById("shoeInfo5");
+                    x.style.visibility = "hidden";
+                }
+                if(x==6){
+                    x = document.getElementById("shoeInfo6");
                     x.style.visibility = "hidden";
                 }
             }

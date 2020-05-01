@@ -415,4 +415,139 @@ body {
     font-weight: 600;
 }
 
+.growl{
+    transform: rotate(-20deg);
+    position:relative;
+    left:900px;
+    bottom:200px;
+}
 
+.magikarp-container{
+    margin-top:530px;
+}
+
+.explosion-background img{
+    position:absolute;
+    left:600px;
+    width:600px;
+    z-index:2;
+}
+
+.pokeman-magi{
+    position:absolute;
+    left:700px;
+    height:200px;
+    width:200px;
+    z-index:2;
+}
+
+.pokeman-gya{
+    position:relative;
+    left:100px;
+    bottom:400px;
+    opacity:0.8;
+}
+
+.tilt {
+    animation: tilt 2s infinite linear;
+}
+  
+  @keyframes tilt {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+      }
+  }
+
+  @keyframes rotationnclock {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(-10deg);
+    }
+  }
+
+  .flail{
+      animation:tilt 0.5s infinite linear;
+  }
+
+  .sale-info{
+      background-color:transparent;
+      border:10px black solid;
+      border-radius:5px;
+  }
+
+  .shoe-box{
+    position:absolute;
+    left:1200px;
+    top:4800px;
+    z-index: 4;
+    background-color:rgb(255, 255, 255);
+    width:350px;
+    height:350px;
+    border-radius:50%;
+}
+
+.shoe-box img{
+    z-index:4;
+    max-width:300;
+    position:relative;
+    top:50px;
+    left:20px;
+}
+
+.shoe-info-magikarp{
+    z-index:2;
+    visibility:hidden;
+    position:relative;
+    bottom:550px;
+    left:700px;
+    margin-top:75px;
+    background-color:white;
+    height:200px;
+    border-bottom-left-radius:50px;
+    border-bottom:solid 10px#f02525;
+    border-left:solid 10px #e4e6a2;
+    transform:rotate(-10deg);
+}
+
+.shoe-info-magikarp h1{
+    margin-top:10px;
+    margin-left:30px;
+    font-size:30px;
+    font-family:'Raleway';
+}
+
+.shoe-info-magikarp p{
+    margin-left:30px;
+    font-family:'Lato';
+}
+
+.shoe-info-magikarp p span{
+    font-size:22px;
+    color:#ebb111;
+    font-weight: 600;
+}
+
+.video-container {
+    height: 150px;
+    perspective: 600;
+    position: relative;
+    width: 150px;
+}
