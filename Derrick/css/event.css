@@ -496,7 +496,7 @@ body {
   .shoe-box{
     position:absolute;
     left:1200px;
-    top:4800px;
+    top:5000px;
     z-index: 4;
     background-color:rgb(255, 255, 255);
     width:350px;
