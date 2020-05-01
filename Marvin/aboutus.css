@@ -1,6 +1,5 @@
 body{
     background-size:cover;
-    font-family:Arial;
     margin:0;
     }
   
@@ -275,6 +274,7 @@ body{
     
     .inner-header .nav-right .cart-icon .cart-hover .select-items table tr td.si-text .product-selected p {
       font-family:"Baloo Paaji 2";
+      font-size:18px;
       font-weight:800;
       color: rgb(87, 87, 87);
       line-height: 30px;

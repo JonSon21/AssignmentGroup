@@ -1,6 +1,5 @@
 body{
     background-size:cover;
-    font-family:Arial;
     margin:0;
   }
   
@@ -279,6 +278,7 @@ body{
     color: rgb(87, 87, 87);
     line-height: 30px;
     margin-bottom: 7px;
+    font-size:18px;
   }
   
   .inner-header .nav-right .cart-icon .cart-hover .select-items table tr td.si-text .product-selected h6 {
@@ -413,6 +413,7 @@ body{
   
 
   .guide .size h1{
+    font-family:Arial;
     text-align: center;
     margin-top: 75px;
   }
