@@ -256,4 +256,9 @@ body {
   z-index: 1;
   text-decoration: none;
   }
+
+  .btn-block {
+    margin-top: 10px;
+    text-align: center;
+    }
   
