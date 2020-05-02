@@ -584,7 +584,7 @@ input:focus::-webkit-input-placeholder {
  } 
 
  /* Footer*/
-.footer{
+ .footer{
 	background: black;
 	color:white;
 	height: 350px;
@@ -616,7 +616,11 @@ input:focus::-webkit-input-placeholder {
   .footer .footer-content .footer-section{
 	flex:1;
 	padding: 25px;
-	
+  }
+
+  .footer-section p{
+	font-family:'Raleway';
+	color:rgb(207, 207, 207);
   }
   
   .footer .footer-content .footer-section .socials
@@ -627,19 +631,27 @@ input:focus::-webkit-input-placeholder {
   
   .footer .footer-content h1, .footer .footer-content h2{
 	color:whitesmoke;
+	font-family:'Baloo Paaji 2';
+	font-size:38px;
+  }
+
+  .footer .footer-content h1{
+	  border-bottom:0.5px solid rgb(209, 209, 209);
   }
   
   .footer .footer-content .about .contact span{
+	font-family:'Baloo Paaji 2';
 	display: block;
 	font-size:1.1em;
 	margin-bottom:8px;
+	color:rgb(207, 207, 207);
   }
   
   .footer .footer-content .about .socials a{
 	border:1px solid gray;
 	width:45px;
 	height:41px;
-	padding-top:5px;
+	padding-top:10px;
 	margin-right:5px;
 	text-align:center;
 	display:inline-block;
@@ -654,10 +666,15 @@ input:focus::-webkit-input-placeholder {
 	transition:all .3s;
   }
   
+  .footer .footer-content .links ul{
+	  list-style:none;
+  }
+
   .footer .footer-content .links ul a{
   display:block;
   margin-bottom:10px;
-  color:white;
+  color:rgba(255, 255, 255, 0.76);
+  text-decoration:none;
   }
   
   .footer .footer-content .links ul a:hover{
@@ -689,4 +706,10 @@ input:focus::-webkit-input-placeholder {
   
   .footer .footer-content .contact-form .contact-btn{
 	float:right;
+	border:3px solid white;
+	color:white;
+  }
+
+  .footer .footer-content .contact-form .contact-btn:hover{
+	opacity: 0.6;
   }
