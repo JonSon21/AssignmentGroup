@@ -149,7 +149,7 @@
       <div class="container">
           <nav class="nav-menu mobile-menu">
               <ul>
-                  <li class="active"><a id="home-select" href="../Marvin/homepage.html">Home</a></li>
+                  <li class="current"><a id="home-select" href="../Marvin/homepage.html">Home</a></li>
                   <li><a id="shop-select"href="#">Shop</a>
                       <ul class="dropdown">
                           <li><a id="shop-men-select"href="../JonSon/Mens.html">Men</a></li>
@@ -223,17 +223,13 @@
       <div class="col-lg-9">
           <div class="row">
               <div class="col-lg-6">
-                  <!-- Trigger the Modal -->
                   <img id="product" src="shoes/af1low whitegymred(h).jpg" alt="af1low whitegymred(h)" style="width:100%;max-width:650px">
 
-                  <!-- The Modal -->
                   <div id="product-big-url" class="modal">
 
-                    <!-- The Close Button -->
-                    <span class="close">&times;</span>
+                  <span class="close">&times;</span>
 
-                    <!-- Modal Content (The Image) -->
-                    <img class="modal-content" id="img01">
+                  <img class="modal-content" id="img01">
 
                   </div> 
                   </br>
@@ -765,8 +761,7 @@ function down(min) {
 </script>
 
 <script>
-  var header = document.getElementById("fw-sc");
-  var btns = header.getElementsByClassName("sc-size");
+  var btns = document.getElementsByClassName("sc-size");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
@@ -871,10 +866,10 @@ function down(min) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" nihao", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " nihao";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
   </script>
@@ -890,12 +885,12 @@ function down(min) {
   <div class="footer">
       <div class="footer-content">
         <div class="footer-section about">
-          <h1><em>Sports</em></h1>
-          <p>write something</p>
+          <h1><em>【k】【n】【n】【c】【c】【b】</em></h1>
+          <p>kidz newz network cheesy cheeze burger</p>
   
           <div class="contact">
-            <span><i class="fa fa-phone"></i>&nbsp; 123-456-789</span>
-            <span><i class="fa fa-envelope"></i>&nbsp; info@sports.com</span>
+            <span><i class="fa fa-phone"></i>&nbsp; 03-4145 0123</span>
+            <span><i class="fa fa-envelope"></i>&nbsp; knnccb.shop@gmail.com</span>
           </div>
           <div class="socials">
             <a href="#"><i class="fa fa-facebook" style="color:#DDDDDD;"></i></a>
@@ -907,13 +902,12 @@ function down(min) {
   
         <div class="footer-section links">
           <h1>Quick Links</h1>
-  
-  
+
           <ul>
-            <li style="font-size:25px"><a href="#">Events</a></li>
+            <li style="font-size:25px"><a href="./event.html">Events</a></li>
             <li style="font-size:25px"><a href="#">Gallery</a></li>
-            <li style="font-size:25px"><a href="#">Terms and Condition</a></li>
-            <li style="font-size:25px"><a href="#">Team</a></li>
+            <li style="font-size:25px"><a href="#">Terms and Conditions</a></li>
+            <li style="font-size:25px"><a href="../Marvin/aboutus.html">Team</a></li>
           </ul>
   
   
@@ -932,7 +926,7 @@ function down(min) {
       </div>
   
       <div class="footer-bottom">
-        &copy;shoes.com| Designed by Sports
+        &copy;knnccb!
       </div>
     </div>
 </footer>
